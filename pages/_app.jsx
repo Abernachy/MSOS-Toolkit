@@ -1,13 +1,12 @@
-import Layout from '../src/components/Layout'
+import Layout from '../src/components/Layout/Layout.jsx'
 import '../styles/globals.css'
 
-
 function MyApp({ Component, pageProps }) {
-  return (
-   <Layout> 
-    <Component {...pageProps} />
-    </Layout>
-  )
+	return (
+		<Layout>
+			<Component {...pageProps} />
+		</Layout>
+	)
 }
 
 export default MyApp

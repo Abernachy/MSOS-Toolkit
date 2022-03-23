@@ -1,17 +1,25 @@
 /* Main Page Layout */
 .mainContainer {
 	min-height: 100vh;
-  max-width: 95%;
-  margin: 0 auto;
+	max-width: 95%;
+	margin: 0 auto;
 	padding: 0 0.5rem;
-	display: flex;
+	color: var(--sq-gold);
+	/* display: flex;
 	flex-direction: column;
 	justify-content: flex-start;
-	align-items: center;
+	align-items: center; */
 }
 
+/* Split Containers , designed for mobile first and then up from there*/
 
-/* Section Containers , designed for mobile first and then up from there*/
+.split {
+	display: flex;
+	flex-direction: column;
+}
+
+/*
+old CSS, scorch earthish and going from there
 .sectionContainer {
   overflow:hidden;
   width: 85%;
@@ -47,6 +55,7 @@ justify-content: flex-start;
 
   
 /* Image container */
+/* 
 .imageContainer {
   dislay: block;
 
@@ -81,9 +90,8 @@ justify-content: flex-start;
   
 /* Image container */
 
-
-}
 /* The Hero Image */
+/*
 .heroContainer {
   background-color: black;
   display: block;
@@ -103,6 +111,7 @@ justify-content: flex-start;
 }
 
 /* The text for the hero thingy */
+/*
 .heroText{
 text-align: center;
 position: absolute;
@@ -121,4 +130,5 @@ color: white;
 .heroText h1 {
   font-weight:700;
   font-size: 2.5rem;
-}
+} 
+*/
