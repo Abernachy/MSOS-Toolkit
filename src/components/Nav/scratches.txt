@@ -1,5 +1,3 @@
-/* Mobile view */
-
 /* .nav {
 	position: fixed;
 	top: 0;
@@ -87,14 +85,7 @@
 	justify-content: space-evenly;
 } */
 
-.mobileNav {
-}
 
-.mobileNav ul {
-	display: flex;
-	direction: row;
-	background-color: red;
-}
 /* 
 .nav ul {
 	display: flex;
@@ -106,8 +97,3 @@
 .nav ul li a {
 	margin: 5px 15px;
 } */
-
-.hamSvg {
-	height: 25px;
-	width: 25px;
-}

@@ -15,6 +15,10 @@ export const navLinks = [
 		name: 'Airlift Resources',
 		path: '/airlift',
 	},
+	{
+		name: 'Billy',
+		path: '/airlift',
+	},
 ]
 
 export const eagleLinks = []
