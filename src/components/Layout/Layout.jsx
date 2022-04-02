@@ -2,6 +2,7 @@ import Nav from '../Nav/Nav'
 import Footer from '../Footer/Footer'
 import Head from 'next/head'
 import layoutStyle from './Layout.module.css'
+import { routes } from '../../utils/routes'
 
 const Layout = ({ children }) => {
 	return (
@@ -25,7 +26,7 @@ const Layout = ({ children }) => {
 					key='viewport'
 				/>
 			</Head>
-			<Nav />
+			<Nav navLinks={routes.navLinks} />
 
 			<div className={layoutStyle.container}>
 				<main>{children}</main>
