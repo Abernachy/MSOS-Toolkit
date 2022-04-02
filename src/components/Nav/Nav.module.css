@@ -1,113 +1,47 @@
-/* Mobile view */
-
-/* .nav {
-	position: fixed;
-	top: 0;
-	width: 100%;
-	height: 2.4rem;
+/* Base component design */
+.Nav {
 	background-color: var(--sq-blue);
-}
-
-.nav ul {
-	list-style-type: none;
-	background-color: var(--sq-gold);
-	height: 100%;
-	width: 100%;
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	align-items: center;
-	position: relative;
-}
-
-.listItem {
-	margin: 0 auto;
-	text-transform: uppercase;
 	color: var(--sq-white);
-	font-weight: 700;
-	cursor: pointer;
 }
 
-.hamBtn {
-	display: inline;
-	position: fixed;
-	left: 0.5rem;
-	top: 0.35 rem;
-	color: var(--sq-blue);
-	font-size: 1.1rem;
-	width: 100px;
-	height: 50px;
-}
-
-.hamBtn svg {
-	width: 25px;
-	height: 25px;
-}
-
-@media (min-width: 500px) {
-	.nav {
-		display: flex;
-		position: fixed;
-		width: 100%;
-		top: 0;
-		height: 2.4rem;
-		background-color: var(--sq-blue);
-	}
-
-	.nav ul {
-		flex-direction: row;
-		height: auto;
-	}
-
-	.listItem:nth-child(1) {
-		border-top: 1px solid rgba(255, 255, 255, 0.555);
-		margin-top: 0.35rem;
-	}
-
-	.listItem {
-		width: 100%;
-		border-top: 1px solid rgba(255, 255, 255, 0.555);
-		text-align: center;
-		margin-right: 0px;
-		padding: 1rem 0;
-	}
-	.hamBtn {
+/* Desktop View */
+@media screen and (min-width: 501px) {
+	.mobileItems {
 		display: none;
 	}
-} */
-/* .nav {
 
-	position: relative;
-	height: 60px;
-	padding: 15px;
-	background: var(--sq-blue);
-	color: #fff;
-	display: flex;
+	.deskItems {
+		display: flex;
+		justify-content: center;
+		gap: 2rem;
+		font-size: 3rem;
+		font-weight: 600;
+		padding-bottom: 0.5rem;
+	}
 
-	justify-content: space-evenly;
-} */
-
-.mobileNav {
+	.deskItems > a:hover {
+		color: var(--sq-gold);
+	}
 }
 
-.mobileNav ul {
-	display: flex;
-	direction: row;
-	background-color: red;
-}
-/* 
-.nav ul {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	list-style: none;
-}
+/* Mobile view */
 
-.nav ul li a {
-	margin: 5px 15px;
-} */
+@media screen and (max-width: 500px) {
+	.mobileNav {
+		display: flex;
+	}
 
-.hamSvg {
-	height: 25px;
-	width: 25px;
+	.mobileNav ul {
+		display: flex;
+		direction: row;
+	}
+
+	.hamSvg {
+		height: 25px;
+		width: 25px;
+	}
+
+	.deskItems {
+		display: none;
+	}
 }
