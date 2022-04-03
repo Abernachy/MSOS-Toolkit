@@ -21,39 +21,39 @@ export const routes = {
 		{
 			name: 'AMLO Services',
 			description: 'Need help requesting Airlift',
-			path: '/services/amlo',
+			path: '/services/amlo-services',
 		},
 		{
 			name: 'EAGLE Services',
 			description: 'Need help preparing for Joint-Inspection',
-			path: '/services/eagle',
+			path: '/services/eagle-services',
 		},
 		{
 			name: 'COMSEC Services',
 			description: 'Need help with COMSEC Equipment',
-			path: '/services/amlo',
+			path: '/services/comsec-services',
 		},
 	],
 	resourcesRoutes: [
 		{
 			name: 'User Resources',
 			description: 'Free resources for customers',
-			path: '/resources/user',
+			path: '/resources/user-resources',
 		},
 		{
 			name: 'AMLO Resources',
 			description: 'Resources for AMLOs ',
-			path: '/resources/amlo',
+			path: '/resources/amlo-resources',
 		},
 		{
 			name: 'EAGLE Resources',
 			description: 'Resources for EAGLEs',
-			path: '/resources/eagle',
+			path: '/resources/eagle-resources',
 		},
 		{
 			name: 'COMSEC Resources',
 			description: 'Resources for COMSEC',
-			path: '/resources/amlo',
+			path: '/resources/amlo-resources',
 		},
 	],
 }
