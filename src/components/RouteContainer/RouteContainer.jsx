@@ -1,15 +1,33 @@
-import React from 'react'
-import PropTypes from 'prop-types'
+// CSS Import
+import styles from './RouteContainer.module.css'
 
-const RouteContainer = (heading, routes) => {
+// component imports
+import RouteItems from '../RouteItems/RouteItems'
+
+const RouteContainer = ({ heading, routes }) => {
 	return (
 		/*
     This component will take an array of routes and act as a container for them.
 
-    This way I can have a sweet ass route thingy to show subroutes when the user highlights a Nav item 
-    Also this is for Desktop view.  The mobile version will utilize a modal style design
+    This way I can have a sweet route thingy to show subroutes when the user highlights a Nav item 
+    Also this is for Desktop view.  The mobile version will utilize a modal style design with a different component
     */
-		<div>RouteContainer</div>
+		<div className={styles.RouteContainer}>
+			<h2>{heading}</h2>
+
+			<div className={styles.line} />
+			<ul className={styles.list}>
+				{routes.map((item, index) => (
+					<li key={index}>
+						<RouteItems
+							name={item.name}
+							description={item.description}
+							path={item.path}
+						/>
+					</li>
+				))}
+			</ul>
+		</div>
 	)
 }
 

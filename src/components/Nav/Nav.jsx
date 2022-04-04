@@ -18,12 +18,10 @@ const Navbar = ({ navLinks }) => {
 		<header>
 			<nav className={navStyles.Nav}>
 				<ul className={navStyles.deskItems}>
-					{navLinks.map((link, index) => {
+					{navLinks.map((link) => {
 						return (
 							// <li className='listItem'>
-							<Link href={link.path} key={link.index}>
-								{link.name}
-							</Link>
+							<Link href={link.path}>{link.name}</Link>
 							// </li>
 						)
 					})}

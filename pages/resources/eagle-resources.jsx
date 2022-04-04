@@ -1,4 +1,4 @@
-import LazyShow from '../../../src/components/LazyShow/LazyShow.jsx'
+import LazyShow from '../../src/components/LazyShow/LazyShow.jsx'
 const eagleResources = () => {
 	return (
 		<div>
