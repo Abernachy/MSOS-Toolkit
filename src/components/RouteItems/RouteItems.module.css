@@ -1,0 +1,15 @@
+.sectionContainer {
+	padding: 1rem;
+}
+
+.sectionContainer:hover {
+	background-color: var(--sq-gold);
+	transform: scale(1.1);
+}
+
+.itemContainer {
+	display: flex;
+	font-size: 1.5rem;
+	align-items: center;
+	gap: 2rem;
+}

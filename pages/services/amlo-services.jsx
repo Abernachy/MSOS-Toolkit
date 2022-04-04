@@ -1,7 +1,7 @@
 import React from 'react'
 
-const index = () => {
-	return <div>index</div>
+const amloServices = () => {
+	return <div>amloServices</div>
 }
 
-export default index
+export default amloServices

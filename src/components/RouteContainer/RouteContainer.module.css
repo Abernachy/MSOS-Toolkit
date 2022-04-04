@@ -1,0 +1,19 @@
+.RouteContainer {
+	border: 3px solid black;
+	border-radius: 10%;
+	overflow: hidden;
+	padding: 10px;
+}
+
+.RouteHeading {
+	font-size: 1.5rem;
+}
+
+.RouteItem {
+}
+
+.RouteContainer {
+}
+.line {
+	border-bottom: 5px solid var(--sq-grey);
+}
