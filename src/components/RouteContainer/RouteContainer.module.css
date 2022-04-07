@@ -1,19 +1,28 @@
-.RouteContainer {
+.routeContainer {
+	color: var(--sq-white);
+	position: absolute;
+	background-color: var(--sq-blue);
+
+	z-index: 1;
 	border: 3px solid black;
-	border-radius: 10%;
+	border-radius: 5%;
 	overflow: hidden;
-	padding: 10px;
+	padding: 2rem;
+	box-shadow: 0px 0px 10px black;
 }
 
-.RouteHeading {
-	font-size: 1.5rem;
+.routeContainer:hover {
 }
 
-.RouteItem {
+.routeContainer li {
+	list-style: none;
+}
+.routeHeading {
+	font-size: 2rem;
+	font-weight: 700;
+	margin-bottom: 1rem;
 }
 
-.RouteContainer {
-}
 .line {
 	border-bottom: 5px solid var(--sq-grey);
 }
