@@ -9,11 +9,13 @@ const RouteContainer = ({ heading, routes }) => {
 		/*
     This component will take an array of routes and act as a container for them.
 
+			On the Navbar, I want to be able to mouse over the parnet element to make the container appear.  to do this, I'll set a conditional render based on the isVisible prop. 
     This way I can have a sweet route thingy to show subroutes when the user highlights a Nav item 
     Also this is for Desktop view.  The mobile version will utilize a modal style design with a different component
     */
-		<div className={styles.RouteContainer}>
-			<h2>{heading}</h2>
+
+		<div className={styles.routeContainer}>
+			<h2 className={styles.routeHeading}>{heading}</h2>
 
 			<div className={styles.line} />
 			<ul className={styles.list}>

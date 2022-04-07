@@ -1,8 +1,11 @@
-.sectionContainer {
+/* Desktop View */
+
+.desktopSectionContainer {
 	padding: 1rem;
 }
 
-.sectionContainer:hover {
+.desktopSectionContainer:hover {
+	color: black;
 	background-color: var(--sq-gold);
 	transform: scale(1.1);
 }
@@ -12,4 +15,12 @@
 	font-size: 1.5rem;
 	align-items: center;
 	gap: 2rem;
+}
+
+/* Mobile view */
+
+@media screen and (max-width: 500px) {
+	.desktopSectionContainer {
+		display: none;
+	}
 }

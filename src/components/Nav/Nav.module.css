@@ -9,6 +9,18 @@
 	.mobileItems {
 		display: none;
 	}
+	/* .subNavHide {
+		Controls visibility of drop down menu items
+		display: none;
+	} */
+
+	.subNav:hover {
+		display: contents;
+		color: var(--sq-gold);
+	}
+	.routeContainer {
+		display: block;
+	}
 
 	.deskItems {
 		display: flex;
@@ -19,9 +31,17 @@
 		padding-bottom: 0.5rem;
 	}
 
-	.deskItems > a:hover {
+	.deskItems > li:hover {
 		color: var(--sq-gold);
 	}
+
+	.deskItems li {
+		list-style: none;
+	}
+
+	/* .subNavItems > a:hover {
+		color: var(--sq-gold);
+	} */
 }
 
 /* Mobile view */
