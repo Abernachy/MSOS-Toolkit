@@ -1,3 +1,5 @@
+/* Component Styles */
+
 .routeContainer {
 	color: var(--sq-white);
 	position: absolute;
@@ -10,19 +12,56 @@
 	padding: 2rem;
 	box-shadow: 0px 0px 10px black;
 }
-
-.routeContainer:hover {
-}
-
-.routeContainer li {
-	list-style: none;
-}
 .routeHeading {
 	font-size: 2rem;
 	font-weight: 700;
 	margin-bottom: 1rem;
 }
 
-.line {
-	border-bottom: 5px solid var(--sq-grey);
+/* Desktop View */
+@media screen and (min-width: 1200px) {
+	.mobileContainer {
+		display: none;
+	}
+
+	.routeContainer li {
+		list-style: none;
+	}
+
+	.line {
+		border-bottom: 5px solid var(--sq-grey);
+	}
+}
+
+/* Mobile View */
+@media screen and (max-width: 1199px) {
+	.desktopContainer {
+		display: none;
+	}
+
+	.routeContainer {
+		z-index: 0;
+	}
+
+	.mobileContainer {
+		width: 50vw;
+	}
+
+	.dropDownSvg {
+		height: 25px;
+		width: 25px;
+	}
+
+	.mobileHeader {
+		display: flex;
+		align-items: center;
+	}
+
+	.mobileItems ul {
+		list-style: none;
+	}
+
+	.dropDownBtn {
+		margin-left: auto;
+	}
 }

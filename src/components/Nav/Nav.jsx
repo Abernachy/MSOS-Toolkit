@@ -11,6 +11,7 @@ const Navbar = ({ navLinks }) => {
 
 	const showSubMenu = (index) => {
 		setSubMenuId(index)
+		console.log(index)
 	}
 
 	const hideSubMenu = () => {
@@ -24,6 +25,7 @@ const Navbar = ({ navLinks }) => {
 					{navLinks.map((item, index) => (
 						<li key={index}>
 							<div
+								onClick={() => hideSubMenu()}
 								onMouseEnter={() => showSubMenu(index)}
 								onMouseLeave={() => hideSubMenu()}>
 								<Link href={item.path}>
@@ -34,34 +36,38 @@ const Navbar = ({ navLinks }) => {
 										onMouseLeave={() => setSubMenuId(null)}
 										className={navStyles.routeContainer}
 										heading={item.name}
-										routes={item.subRoutes}
+										route={item.path}
+										subRoutes={item.subRoutes}
 									/>
 								) : null}
 							</div>
 						</li>
 					))}
 				</ul>
-
-				<ul className={navStyles.mobileItems}>
-					<li>
-						<Link href='/'>Home</Link>
-					</li>
-					<li>
-						<button className={navStyles.hamBtn}>
-							<svg
-								xmlns='http://www.w3.org/2000/svg'
-								className={navStyles.hamSvg}
-								viewBox='0 0 20 20'
-								fill='currentColor'>
-								<path
-									fillRule='evenodd'
-									d='M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z'
-									clipRule='evenodd'
-								/>
-							</svg>
-						</button>
-					</li>
-				</ul>
+				<div className={navStyles.mobileNav}>
+					<ul className={navStyles.mobileItems}>
+						<li>
+							<Link href='/'>Home</Link>
+						</li>
+						<li className={navStyles.lastItem}>
+							<button className={navStyles.hamBtn}>
+								<svg
+									xmlns='http://www.w3.org/2000/svg'
+									className={navStyles.hamSvg}
+									fill='none'
+									viewBox='3 0 20 20'
+									stroke='currentColor'
+									strokeWidth='2'>
+									<path
+										strokeLinecap='round'
+										strokeLinejoin='round'
+										d='M4 6h16M4 12h16M4 18h16'
+									/>
+								</svg>
+							</button>
+						</li>
+					</ul>
+				</div>
 			</nav>
 		</header>
 	)

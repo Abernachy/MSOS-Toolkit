@@ -1,13 +1,7 @@
 /* Desktop View */
 
-.desktopSectionContainer {
+.desktopContainer {
 	padding: 1rem;
-}
-
-.desktopSectionContainer:hover {
-	color: black;
-	background-color: var(--sq-gold);
-	transform: scale(1.1);
 }
 
 .itemContainer {
@@ -16,11 +10,25 @@
 	align-items: center;
 	gap: 2rem;
 }
+@media screen and (min-width: 1200px) {
+	.mobileContainer {
+		display: none;
+	}
 
+	.desktopContainer:hover {
+		color: black;
+		background-color: var(--sq-gold);
+		transform: scale(1.1);
+	}
+}
+
+.mobileContainer {
+	font-size: 1.5rem;
+}
 /* Mobile view */
 
-@media screen and (max-width: 500px) {
-	.desktopSectionContainer {
+@media screen and (max-width: 1199px) {
+	.desktopContainer {
 		display: none;
 	}
 }
