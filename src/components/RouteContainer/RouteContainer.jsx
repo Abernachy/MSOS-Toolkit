@@ -1,34 +1,99 @@
+//Main Imports
+import { useState } from 'react'
+import Link from 'next/link'
 // CSS Import
 import styles from './RouteContainer.module.css'
 
 // component imports
 import RouteItems from '../RouteItems/RouteItems'
 
-const RouteContainer = ({ heading, routes }) => {
+const RouteContainer = ({ heading, subRoutes = null, route }) => {
+	const [mobileDropDowns, setMobileDropDowns] = useState('closed')
+
+	const dropdownHandler = () => {
+		// lols, I kept getting a boolean div warning and thought this was the problem
+		if (mobileDropDowns === 'closed') {
+			setMobileDropDowns('open')
+		} else {
+			setMobileDropDowns('closed')
+		}
+	}
 	return (
 		/*
+		This probably an easier approach that will solve the problem of having a path and subroutes on mobile. 
+		This component will take in an object and if there are subroutes underneath, we can have it reflect those.
+
     This component will take an array of routes and act as a container for them.
 
-			On the Navbar, I want to be able to mouse over the parnet element to make the container appear.  to do this, I'll set a conditional render based on the isVisible prop. 
     This way I can have a sweet route thingy to show subroutes when the user highlights a Nav item 
     Also this is for Desktop view.  The mobile version will utilize a modal style design with a different component
     */
 
 		<div className={styles.routeContainer}>
-			<h2 className={styles.routeHeading}>{heading}</h2>
+			<div className={styles.desktopContainer}>
+				<Link href={route}>
+					<a>
+						<h2 className={styles.routeHeading}>{heading}</h2>
+					</a>
+				</Link>
 
-			<div className={styles.line} />
-			<ul className={styles.list}>
-				{routes.map((item, index) => (
-					<li key={index}>
-						<RouteItems
-							name={item.name}
-							description={item.description}
-							path={item.path}
-						/>
-					</li>
-				))}
-			</ul>
+				<div className={styles.line} />
+				<ul className={styles.list}>
+					{/* Optional chaining (?.), this way, if we return something
+							with no routes, it wont crash due to routes being undefined */}
+					{subRoutes?.map((item, index) => (
+						<li key={index}>
+							<RouteItems
+								name={item.name}
+								description={item.description}
+								path={item.path}
+							/>
+						</li>
+					))}
+				</ul>
+			</div>
+
+			<div className={styles.mobileContainer}>
+				<div className={styles.mobileHeader}>
+					<Link href={route}>
+						<a>
+							<h2 className={styles.routeHeading}>{heading}</h2>
+						</a>
+					</Link>
+					{subRoutes ? (
+						<button
+							className={styles.dropDownBtn}
+							onClick={dropdownHandler}>
+							<svg
+								xmlns='http://www.w3.org/2000/svg'
+								className={styles.dropDownSvg}
+								fill='none'
+								viewBox='0 0 24 24'
+								stroke='currentColor'
+								strokeWidth='2'>
+								<path
+									strokeLinecap='round'
+									strokeLinejoin='round'
+									d='M19 9l-7 7-7-7'
+								/>
+							</svg>
+						</button>
+					) : null}
+				</div>
+				{mobileDropDowns == 'open' ? (
+					<div className={styles.mobileItems}>
+						<ul>
+							{/* Optional chaining (?.), this way, if we return something
+							with no routes, it wont crash due to routes being undefined */}
+							{subRoutes?.map((item, index) => (
+								<li key={index}>
+									<RouteItems name={item.name} path={item.path} />
+								</li>
+							))}
+						</ul>
+					</div>
+				) : null}
+			</div>
 		</div>
 	)
 }

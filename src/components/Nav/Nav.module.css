@@ -5,14 +5,10 @@
 }
 
 /* Desktop View */
-@media screen and (min-width: 501px) {
+@media screen and (min-width: 1200px) {
 	.mobileItems {
 		display: none;
 	}
-	/* .subNavHide {
-		Controls visibility of drop down menu items
-		display: none;
-	} */
 
 	.subNav:hover {
 		display: contents;
@@ -38,30 +34,33 @@
 	.deskItems li {
 		list-style: none;
 	}
-
-	/* .subNavItems > a:hover {
-		color: var(--sq-gold);
-	} */
 }
 
-/* Mobile view */
+/* Mobile view and mobile portrait */
 
-@media screen and (max-width: 500px) {
-	.mobileNav {
-		display: flex;
+@media screen and (max-width: 1199px) {
+	.deskItems {
+		display: none;
 	}
-
-	.mobileNav ul {
+	.mobileItems {
 		display: flex;
-		direction: row;
+		flex-direction: row;
+		font-size: 4rem;
+		flex-grow: 1;
+		list-style-type: none;
+		margin: 0 0.5rem;
+	}
+	.lastItem {
+		margin-left: auto;
 	}
 
 	.hamSvg {
-		height: 25px;
-		width: 25px;
+		height: 3rem;
+		width: 3rem;
 	}
-
-	.deskItems {
-		display: none;
+	.hamBtn {
+		background-color: var(--sq-blue);
+		color: var(--sq-white);
+		border: none;
 	}
 }
