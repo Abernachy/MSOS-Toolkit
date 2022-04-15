@@ -1,21 +1,34 @@
+//Main Imports
 import React from 'react'
 
 // css import
 import styles from './MobileModal.module.css'
 
-const MobileModal = ({ setIsOpen }) => {
+// Component Imports
+import RouteContainer from '../RouteContainer/RouteContainer'
+
+const MobileModal = ({ setToggleModal, navLinks }) => {
+	/* This will be the mobile modal for mobile Navigation. navLinks object/state is passed down and the links will be .mapped() to routeContainer components */
+
 	return (
 		<>
-			<div className={styles.darkBG} onClick={() => setIsOpen(false)} />
 			<div className={styles.centered}>
 				<div className={styles.modal}>
-					<div className={styles.modalHeader}>
-						<h5 className={styles.heading}>Dialog</h5>
-					</div>
+					<ul className={styles.navItems}>
+						{navLinks.map((item, index) => (
+							<li key={index}>
+								<RouteContainer
+									heading={item.name}
+									subRoutes={item.subRoutes}
+									route={item.path}
+								/>
+							</li>
+						))}
+					</ul>
 					<button
 						className={styles.closeBtn}
-						onClick={() => setIsOpen(false)}>
-						<h5>He Dead</h5>
+						onClick={() => setToggleModal(false)}>
+						Close me
 					</button>
 				</div>
 			</div>

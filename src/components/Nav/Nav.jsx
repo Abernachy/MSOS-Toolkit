@@ -1,12 +1,15 @@
 import React, { useState, useEffect } from 'react'
 import Link from 'next/link'
+
+// CSS Imports
 import navStyles from './Nav.module.css'
 
 // Component Imports
 import RouteContainer from '../RouteContainer/RouteContainer'
+import MobileModal from '../MobileModal/MobileModal'
 
 const Navbar = ({ navLinks }) => {
-	const [toggleMenu, setToggleMenu] = useState(false)
+	const [toggleModal, setToggleModal] = useState(false)
 	const [subMenuId, setSubMenuId] = useState(0)
 
 	const showSubMenu = (index) => {
@@ -16,6 +19,10 @@ const Navbar = ({ navLinks }) => {
 
 	const hideSubMenu = () => {
 		setSubMenuId(null)
+	}
+
+	const mobileNavHandler = (toggleModal) => {
+		setToggleModal(!toggleModal)
 	}
 
 	return (
@@ -50,7 +57,9 @@ const Navbar = ({ navLinks }) => {
 							<Link href='/'>Home</Link>
 						</li>
 						<li className={navStyles.lastItem}>
-							<button className={navStyles.hamBtn}>
+							<button
+								className={navStyles.hamBtn}
+								onClick={() => mobileNavHandler(toggleModal)}>
 								<svg
 									xmlns='http://www.w3.org/2000/svg'
 									className={navStyles.hamSvg}
@@ -65,6 +74,12 @@ const Navbar = ({ navLinks }) => {
 									/>
 								</svg>
 							</button>
+							{toggleModal && (
+								<MobileModal
+									setToggleModal={setToggleModal}
+									navLinks={navLinks}
+								/>
+							)}
 						</li>
 					</ul>
 				</div>
