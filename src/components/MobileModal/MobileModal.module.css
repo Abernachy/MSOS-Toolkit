@@ -1,80 +1,18 @@
-.centered {
+/* .overlay {
+	z-index: 0;
+	position: absolute;
+	background-color: grey;
+	width: 100vw;
+	height: 100vh;
+} */
+
+.modalContainer {
 	position: fixed;
-	top: 25%;
-	left: 59%;
-	transform: translate(-50%, -50%);
+	left: 5%;
+	top: 10%;
+	width: 100vw;
+	height: 100vh;
 }
 .navItems li {
-	list-style-image: none;
-}
-
-.modal {
-	width: 25rem;
-	height: 17rem;
-	background: var(--sq-blue);
-	color: var(--sq-white);
-	z-index: 10;
-	border-radius: 1.6rem;
-	box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.04);
-}
-
-.modalHeader {
-	height: 5rem;
-	background: var(--sq-white);
-	overflow: hidden;
-	border-top-left-radius: 1.6 rem;
-	border-top-right-radius: 1.6 rem;
-}
-
-.heading {
-	margin: 0;
-	padding: 1rem;
-	color: var(--sq-gold);
-	font-weight: 500;
-	font-size: 1.8rem;
-	text-align: center;
-}
-
-.modalContent {
-	padding: 1rem;
-	font-size: 1.4rem;
-	color: var(--sq-grey);
-	text-align: center;
-}
-
-.modalActions {
-	position: absolute;
-	bottom: 0.2rem;
-	margin-bottom: 1rem;
-	width: 100%;
-}
-
-.actionsContainer {
-	display: flex;
-	justify-content: space-around;
-	align-items: center;
-}
-
-.closeBtn {
-	cursor: pointer;
-	font-weight: 500;
-	padding: 4px 8px;
-	border-radius: 8px;
-	border: none;
-	font-size: 1.8rem;
-	color: var(--sq-grey);
-	background: var(--sq-white);
-	transition: all 0.25 ease;
-	box-shadow: 0 5px 20px 0 rga(0, 0, 0, 0.06);
-	position: absolute;
-	right: 0;
-	top: 0;
-	align-self: flex-end;
-	margin-top: -7px;
-	margin-right: -7px;
-}
-
-.closeBtn:hover {
-	box-shadow: 0 5px 20px0 rgba(0, 0, 0, 0.04);
-	transform: translate(-4px, 4px);
+	list-style: none;
 }

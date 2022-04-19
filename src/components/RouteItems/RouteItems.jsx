@@ -15,6 +15,7 @@ const RouteItems = ({ name, description = null, path }) => {
 					</a>
 				</Link>
 			</div>
+			{/* Mobile Items */}
 			<div className={styles.mobileContainer}>
 				<div className={styles.itemContainer}>
 					<Link href={path}>
