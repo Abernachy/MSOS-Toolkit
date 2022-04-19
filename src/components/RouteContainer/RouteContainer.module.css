@@ -1,17 +1,16 @@
 /* Component Styles */
 
-.routeContainer {
+/* .routeContainer {
 	color: var(--sq-white);
-	position: absolute;
 	background-color: var(--sq-blue);
-
 	z-index: 1;
 	border: 3px solid black;
 	border-radius: 5%;
 	overflow: hidden;
 	padding: 2rem;
 	box-shadow: 0px 0px 10px black;
-}
+} */
+
 .routeHeading {
 	font-size: 2rem;
 	font-weight: 700;
@@ -20,6 +19,18 @@
 
 /* Desktop View */
 @media screen and (min-width: 1200px) {
+	.desktopContainer {
+		color: var(--sq-white);
+		background-color: var(--sq-blue);
+		position: absolute;
+		z-index: 1;
+		border: 3px solid black;
+		border-radius: 5%;
+		overflow: hidden;
+		padding: 2rem;
+		box-shadow: 0px 0px 10px black;
+	}
+
 	.mobileContainer {
 		display: none;
 	}
@@ -39,13 +50,13 @@
 		display: none;
 	}
 
-	.routeContainer {
-		z-index: 0;
-	}
-
 	.mobileContainer {
-		width: 50vw;
-		z-index: 2;
+		color: var(--sq-white);
+		background-color: var(--sq-blue);
+		border-bottom: 3px solid black;
+
+		width: 95vw;
+		z-index: 0;
 	}
 
 	.dropDownSvg {

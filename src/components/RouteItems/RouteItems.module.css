@@ -22,13 +22,14 @@
 	}
 }
 
-.mobileContainer {
-	font-size: 1.5rem;
-}
 /* Mobile view */
 
 @media screen and (max-width: 1199px) {
 	.desktopContainer {
 		display: none;
+	}
+	.mobileContainer {
+		font-size: 1.5rem;
+		display: block;
 	}
 }
