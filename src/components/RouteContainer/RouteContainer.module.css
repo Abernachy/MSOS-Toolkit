@@ -67,6 +67,12 @@
 	.mobileHeader {
 		display: flex;
 		align-items: center;
+		padding: 1rem;
+	}
+
+	.routeHeading {
+		font-size: 3rem;
+		cursor: pointer;
 	}
 
 	.mobileItems ul {

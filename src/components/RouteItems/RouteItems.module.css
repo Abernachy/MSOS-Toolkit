@@ -29,7 +29,11 @@
 		display: none;
 	}
 	.mobileContainer {
-		font-size: 1.5rem;
 		display: block;
+	}
+	.itemContainer {
+		font-size: 1.5rem;
+		padding: 1rem;
+		margin-left: 2rem;
 	}
 }
