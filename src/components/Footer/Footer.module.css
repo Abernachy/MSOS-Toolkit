@@ -1,0 +1,9 @@
+.footy {
+	position: fixed;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: var(--sq-blue);
+	border-top: 5px solid black;
+	width: 100%;
+}

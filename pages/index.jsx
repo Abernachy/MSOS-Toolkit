@@ -11,14 +11,13 @@ import styles from '../styles/Home.module.css'
 export default function Home() {
 	return (
 		<div>
-			<div>
+			{/* <div>
 				<div className={styles.heroContainer}>
-					{/* <Image
+					<Image
 						src={msosHero}
 						className={styles.heroImage}
-						layout='responsive'
 						alt='MSOS doing the thing'
-					/> */}
+					/>
 
 					<section className={styles.heroText}>
 						<h1> 621 Mission Support Operations Squadron </h1>
@@ -113,16 +112,8 @@ export default function Home() {
 							your unit is within Gov't regulations.{' '}
 						</p>
 					</div>
-					<div className={styles.imageContainer}>
-						<Image
-							src={Riley1}
-							layout='responsive'
-							alt='stuff is happening'
-							objectFit='fill'
-						/>
-					</div>
 				</section>
-			</div>
+			</div> */}
 		</div>
 	)
 }

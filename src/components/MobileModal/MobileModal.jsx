@@ -1,13 +1,15 @@
 //Main Imports
-import React from 'react'
+import React, { useContext } from 'react'
 
 // css import
 import styles from './MobileModal.module.css'
 
 // Component Imports
 import RouteContainer from '../RouteContainer/RouteContainer'
+import Context from '../../utils/context/Context'
 
-const MobileModal = ({ setToggleModal, navLinks }) => {
+const MobileModal = ({ navLinks }) => {
+	const { toggleModal, setToggleModal } = useContext(Context)
 	/* This will be the mobile modal for mobile Navigation. navLinks object/state is passed down and the links will be .mapped() to routeContainer components */
 
 	return (
@@ -25,11 +27,11 @@ const MobileModal = ({ setToggleModal, navLinks }) => {
 						</li>
 					))}
 				</ul>
-				{/* <button
-				className={styles.closeBtn}
-				onClick={() => setToggleModal(false)}>
-				Close me
-			</button> */}
+				<button
+					className={styles.closeBtn}
+					onClick={() => setToggleModal(false)}>
+					Close me
+				</button>
 			</div>
 		</div>
 	)
