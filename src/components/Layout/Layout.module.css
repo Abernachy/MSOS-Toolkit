@@ -1,4 +1,10 @@
-.container {
+.layoutContainer {
+	display: grid;
+	grid-template-columns: 20rem 1fr 20 rem;
+	grid-template-rows: 5rem 1fr 20rem;
+}
+/* .container {
+	margin-top: 2rem;
 	min-height: 100vh;
 	padding: 0 0.5rem;
 	display: flex;
@@ -18,4 +24,4 @@
 }
 
 .navBar {
-}
+} */
