@@ -56,9 +56,6 @@ const Navbar = ({ navLinks }) => {
 				<Context.Provider value={{ toggleModal, setToggleModal }}>
 					<div className={navStyles.mobileNav}>
 						<ul className={navStyles.mobileItems}>
-							<li>
-								<Link href='/'>Home</Link>
-							</li>
 							<li className={navStyles.lastItem}>
 								<button
 									className={navStyles.hamBtn}
