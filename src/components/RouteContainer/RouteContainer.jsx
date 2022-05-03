@@ -1,5 +1,5 @@
 //Main Imports
-import { useState } from 'react'
+import { useState, useContext } from 'react'
 import Link from 'next/link'
 
 // CSS Import
@@ -7,12 +7,12 @@ import styles from './RouteContainer.module.css'
 
 // component imports
 import RouteItems from '../RouteItems/RouteItems'
+import Context from '../../utils/context/Context'
 
 const RouteContainer = ({ heading, subRoutes = null, route }) => {
 	const [mobileDropDowns, setMobileDropDowns] = useState('closed')
-
+	const { toggleModal, setToggleModal } = useContext(Context)
 	const dropdownHandler = () => {
-		// lols, I kept getting a boolean div warning and thought this was the problem
 		if (mobileDropDowns === 'closed') {
 			setMobileDropDowns('open')
 		} else {
@@ -21,16 +21,6 @@ const RouteContainer = ({ heading, subRoutes = null, route }) => {
 	}
 
 	return (
-		/*
-		This probably an easier approach that will solve the problem of having a path and subroutes on mobile. 
-		This component will take in an object and if there are subroutes underneath, we can have it reflect those.
-
-    This component will take an array of routes and act as a container for them.
-
-    This way I can have a sweet route thingy to show subroutes when the user highlights a Nav item 
-    Also this is for Desktop view.  The mobile version will utilize a modal style design with a different component
-    */
-
 		<div className={styles.routeContainer}>
 			<div className={styles.desktopContainer}>
 				<Link href={route}>
@@ -59,7 +49,11 @@ const RouteContainer = ({ heading, subRoutes = null, route }) => {
 				<div className={styles.mobileHeader}>
 					<Link href={route}>
 						<a>
-							<h2 className={styles.routeHeading}>{heading}</h2>
+							<h2
+								className={styles.routeHeading}
+								onClick={() => setToggleModal(false)}>
+								{heading}
+							</h2>
 						</a>
 					</Link>
 					{subRoutes ? (

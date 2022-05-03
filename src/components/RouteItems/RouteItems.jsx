@@ -1,7 +1,11 @@
+import { useContext } from 'react'
 import Link from 'next/link'
 import styles from './RouteItems.module.css'
+import Context from '../../utils/context/Context'
 
 const RouteItems = ({ name, description = null, path }) => {
+	const { toggleModal, setToggleModal } = useContext(Context)
+
 	return (
 		// This is basically the individual route item
 		<div>
@@ -20,7 +24,7 @@ const RouteItems = ({ name, description = null, path }) => {
 				<div className={styles.itemContainer}>
 					<Link href={path}>
 						<a>
-							<h2>{name}</h2>
+							<h2 onClick={() => setToggleModal(false)}>{name}</h2>
 						</a>
 					</Link>
 				</div>
