@@ -1,17 +1,13 @@
-/* .overlay {
-	z-index: 0;
-	position: absolute;
-	background-color: grey;
+.overlay {
+	position: fixed;
+	left: 0%;
+	top: 5.5%;
 	width: 100vw;
 	height: 100vh;
-} */
+}
 
 .modalContainer {
-	position: fixed;
-	left: 5%;
-	top: 5rem;
-	width: 100vw;
-	height: 100vh;
+	position: absolute;
 	border-top: 3px solid black;
 }
 .navItems li {
