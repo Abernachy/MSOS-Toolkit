@@ -4,14 +4,14 @@ import styles from './RouteItems.module.css'
 import Context from '../../utils/context/Context'
 
 const RouteItems = ({ name, description = null, path }) => {
-	const { toggleModal, setToggleModal } = useContext(Context)
+	const { state, updateState } = useContext(Context)
 
 	return (
 		// This is basically the individual route item
 		<div>
 			<div className={styles.desktopContainer}>
 				<Link href={path}>
-					<a>
+					<a className={styles.desklink}>
 						<div className={styles.itemContainer}>
 							<h3 className={styles.itemName}>{name}</h3>
 							<p className={styles.itemDescription}>{description} </p>
@@ -24,7 +24,7 @@ const RouteItems = ({ name, description = null, path }) => {
 				<div className={styles.itemContainer}>
 					<Link href={path}>
 						<a>
-							<h2 onClick={() => setToggleModal(false)}>{name}</h2>
+							<h2 onClick={() => updateState(false)}>{name}</h2>
 						</a>
 					</Link>
 				</div>

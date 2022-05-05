@@ -1,15 +1,5 @@
 /* Desktop View */
 
-.desktopContainer {
-	padding: 1rem;
-}
-
-.itemContainer {
-	display: flex;
-	font-size: 1.5rem;
-	align-items: center;
-	gap: 2rem;
-}
 @media screen and (min-width: 1200px) {
 	.mobileContainer {
 		display: none;
@@ -19,6 +9,19 @@
 		color: black;
 		background-color: var(--sq-gold);
 		transform: scale(1.1);
+	}
+	.desktopContainer {
+		padding: 1rem;
+	}
+
+	.itemContainer {
+		display: flex;
+		font-size: 1.5rem;
+		align-items: center;
+		gap: 2rem;
+	}
+	.itemContainer:hover {
+		color: black;
 	}
 }
 

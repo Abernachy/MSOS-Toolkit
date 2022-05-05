@@ -11,7 +11,8 @@ import Context from '../../utils/context/Context'
 
 const RouteContainer = ({ heading, subRoutes = null, route }) => {
 	const [mobileDropDowns, setMobileDropDowns] = useState('closed')
-	const { toggleModal, setToggleModal } = useContext(Context)
+	const { state, updateState } = useContext(Context)
+
 	const dropdownHandler = () => {
 		if (mobileDropDowns === 'closed') {
 			setMobileDropDowns('open')
@@ -22,6 +23,7 @@ const RouteContainer = ({ heading, subRoutes = null, route }) => {
 
 	return (
 		<div className={styles.routeContainer}>
+			{console.log(state)}
 			<div className={styles.desktopContainer}>
 				<Link href={route}>
 					<a>
@@ -51,7 +53,7 @@ const RouteContainer = ({ heading, subRoutes = null, route }) => {
 						<a>
 							<h2
 								className={styles.routeHeading}
-								onClick={() => setToggleModal(false)}>
+								onClick={() => updateState(false)}>
 								{heading}
 							</h2>
 						</a>

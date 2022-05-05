@@ -1,12 +1,23 @@
 .overlay {
+	display: flex;
+	flex-direction: row;
+	z-index: 0;
 	position: fixed;
 	left: 0%;
-	top: 5.5%;
+	top: 4.9rem;
 	width: 100vw;
 	height: 100vh;
 }
 
+.outsideMobileMenu {
+	position: fixed;
+	top: 27%;
+	height: 100vh;
+	width: 100vh;
+}
+
 .modalContainer {
+	z-index: 1;
 	position: absolute;
 	border-top: 3px solid black;
 }
