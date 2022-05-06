@@ -29,31 +29,33 @@ const Navbar = ({ navLinks }) => {
 
 	return (
 		<header>
-			<nav className={navStyles.Nav}>
-				<ul className={navStyles.deskItems}>
-					{navLinks.map((item, index) => (
-						<li key={index}>
-							<div
-								onClick={hideSubMenu}
-								onMouseEnter={() => showSubMenu(index)}
-								onMouseLeave={hideSubMenu}>
-								<Link href={item.path}>
-									<a>{item.name}</a>
-								</Link>
-								{item.subRoutes && subMenuId == index ? (
-									<RouteContainer
-										onMouseLeave={hideSubMenu}
-										className={navStyles.routeContainer}
-										heading={item.name}
-										route={item.path}
-										subRoutes={item.subRoutes}
-									/>
-								) : null}
-							</div>
-						</li>
-					))}
-				</ul>
-				<Context.Provider value={{ toggleModal, setToggleModal }}>
+			<Context.Provider
+				value={{ state: toggleModal, updateState: setToggleModal }}>
+				<nav className={navStyles.Nav}>
+					<ul className={navStyles.deskItems}>
+						{navLinks.map((item, index) => (
+							<li key={index}>
+								<div
+									onClick={hideSubMenu}
+									onMouseEnter={() => showSubMenu(index)}
+									onMouseLeave={hideSubMenu}>
+									<Link href={item.path}>
+										<a>{item.name}</a>
+									</Link>
+									{item.subRoutes && subMenuId == index ? (
+										<RouteContainer
+											onMouseLeave={hideSubMenu}
+											className={navStyles.routeContainer}
+											heading={item.name}
+											route={item.path}
+											subRoutes={item.subRoutes}
+										/>
+									) : null}
+								</div>
+							</li>
+						))}
+					</ul>
+
 					<div className={navStyles.mobileNav}>
 						<ul className={navStyles.mobileItems}>
 							<li className={navStyles.lastItem}>
@@ -78,8 +80,8 @@ const Navbar = ({ navLinks }) => {
 							</li>
 						</ul>
 					</div>
-				</Context.Provider>
-			</nav>
+				</nav>
+			</Context.Provider>
 		</header>
 	)
 }
