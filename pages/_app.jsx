@@ -2,6 +2,7 @@ import Layout from '../src/components/Layout/Layout.jsx'
 import Head from 'next/head'
 
 import '../styles/globals.css'
+import { SiteProvider } from '../src/components/SiteProvider/SiteProvider.jsx'
 
 function MyApp({ Component, pageProps }) {
 	return (
@@ -25,9 +26,11 @@ function MyApp({ Component, pageProps }) {
 					key='viewport'
 				/>
 			</Head>
-			<Layout style={{ scrollBehavior: 'smooth' }}>
-				<Component {...pageProps} />
-			</Layout>
+			<SiteProvider>
+				<Layout style={{ scrollBehavior: 'smooth' }}>
+					<Component {...pageProps} />
+				</Layout>
+			</SiteProvider>
 		</>
 	)
 }

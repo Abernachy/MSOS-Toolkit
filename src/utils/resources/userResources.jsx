@@ -1,20 +1,20 @@
 export let userResources = [
 	{
 		name: 'Air Transport Test Loading Activity (ATTLA)',
-		type: 'link',
+		type: 'Regulation and Guidance',
 		path: 'https://intelshare.intelink.gov/sites/attla',
 		requireCac: true,
 		description: 'ATTLA site for cert letters',
 	},
 	{
-		name: 'USAF EOS Center of Balance IOS App',
+		name: '(IPhone) USAF EOS Center of Balance App (Free)',
 		type: 'app',
 		path: 'https://apps.apple.com/us/app/usaf-eos-center-of-balance/id1425999066',
 		requireCac: false,
 		description: 'Weight and Balance calculator for your phone',
 	},
 	{
-		name: 'USAF EOS Center of Balace Android app',
+		name: '(Android) USAF EOS Center of Balace app (Free)',
 		type: 'app',
 		path: 'https://play.google.com/store/apps/details?id=com.ECS.CBCalculator&hl=en_US&gl=US',
 		requireCaC: false,
@@ -22,7 +22,7 @@ export let userResources = [
 	},
 	{
 		name: 'DTR Part 3 Appendix B - Unit Airlift',
-		type: 'pdf',
+		type: 'Regulation and Guidance',
 		path: 'https://www.ustranscom.mil/dtr/part-iii/dtr_part_iii_303.pdf',
 		requireCaC: false,
 		description:
@@ -30,7 +30,7 @@ export let userResources = [
 	},
 	{
 		name: 'DTR Part 3 Appendix J - Hazardous Materials (HAZMAT) Certification and Mobility Procedures ',
-		type: 'pdf',
+		type: 'Regulation and Guidance',
 		path: 'https://www.ustranscom.mil/dtr/part-iii/dtr_part_iii_app_j.pdf',
 		requireCac: false,
 		description:
@@ -38,7 +38,7 @@ export let userResources = [
 	},
 	{
 		name: 'DTR Part 3 Appendix O - Preparation of Equipment and Supplies for Joint Inspection',
-		type: 'pdf',
+		type: 'Regulation and Guidance',
 		path: 'https://www.ustranscom.mil/dtr/part-iii/dtr_part_iii_app_o.pdf',
 		requireCac: false,
 		description:
@@ -46,7 +46,7 @@ export let userResources = [
 	},
 	{
 		name: 'DTR Part 3 Appendix P - Center of Balance Determination - Finding CB',
-		type: 'pdf',
+		type: 'Regulation and Guidance',
 		path: 'https://www.ustranscom.mil/dtr/part-iii/dtr_part_iii_app_p.pdf',
 		requireCaC: false,
 		description:
@@ -54,40 +54,39 @@ export let userResources = [
 	},
 	{
 		name: 'ICODES',
-		type: 'link',
+		type: 'Load Planning',
 		path: 'https://eta-teams.transport.mil',
 		requireCac: true,
 		description: 'ICODES load planning',
 	},
 	{
 		name: 'JALP Class Registration',
-		type: 'link',
-		tag: ['class', 'load planning'],
+		type: 'Load Planning',
 		path: 'https://www.milsuite.mil/book/groups/joint-air-mobility-support-jams',
 		requireCac: true,
 		description:
 			'How to register for JALP classes. JALP is required to be an airload planner for your unit.',
 	},
 	{
-		name: 'ICODES',
-		type: 'link',
-		path: 'https://eta-teams.transport.mil',
-		requireCac: true,
-		description: 'ICODES load planning',
+		name: '(PDF) Shippers Declaration for Dangerous Goods',
+		type: 'Downloadable Resources',
+		path: '/files/AMC Form 1033.pdf',
+		requireCac: false,
+		description: 'A downloadable Shipper\'s Declaration for Dangerous Goods.  3x copies are required for each piece of hazardous item on or with the cargo.',
 	},
 	{
-		name: 'ICODES',
-		type: 'link',
-		path: 'https://eta-teams.transport.mil',
-		requireCac: true,
-		description: 'ICODES load planning',
+		name: '(PDF) Joint Airlift Inspection Record/Checklist',
+		type: 'Downloadable Resources',
+		path: '/files/DD2133.pdf',
+		requireCac: false,
+		description: 'A Joint Inspection Checklist.  Completion of this by the JI is required to load equipment on a Cargo Aircraft ',
 	},
 	{
-		name: 'ICODES',
-		type: 'link',
-		path: 'https://eta-teams.transport.mil',
-		requireCac: true,
-		description: 'ICODES load planning',
+		name: '(PDF) DDForm1387-2 Special Handling Certification ',
+		type: 'Downloadable Resources',
+		path: '/files/DDForm 1387-2.pdf',
+		requireCac: false,
+		description: '',
 	},
 	{
 		name: 'ICODES',

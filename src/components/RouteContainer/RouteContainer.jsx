@@ -7,11 +7,13 @@ import styles from './RouteContainer.module.css'
 
 // component imports
 import RouteItems from '../RouteItems/RouteItems'
-import Context from '../../utils/context/Context'
+
+//Provider Imports
+import { useToggleMobileNavContext } from '../SiteProvider/SiteProvider'
 
 const RouteContainer = ({ heading, subRoutes = null, route }) => {
 	const [mobileDropDowns, setMobileDropDowns] = useState('closed')
-	const { state, updateState } = useContext(Context)
+	const { updateNavMenuState } = useToggleMobileNavContext()
 
 	const dropdownHandler = () => {
 		if (mobileDropDowns === 'closed') {
@@ -23,7 +25,6 @@ const RouteContainer = ({ heading, subRoutes = null, route }) => {
 
 	return (
 		<div className={styles.routeContainer}>
-			{console.log(state)}
 			<div className={styles.desktopContainer}>
 				<Link href={route}>
 					<a>
@@ -53,7 +54,7 @@ const RouteContainer = ({ heading, subRoutes = null, route }) => {
 						<a>
 							<h2
 								className={styles.routeHeading}
-								onClick={() => updateState(false)}>
+								onClick={updateNavMenuState}>
 								{heading}
 							</h2>
 						</a>

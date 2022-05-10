@@ -1,10 +1,10 @@
 import { useContext } from 'react'
 import Link from 'next/link'
 import styles from './RouteItems.module.css'
-import Context from '../../utils/context/Context'
+import { useToggleMobileNavContext } from '../SiteProvider/SiteProvider'
 
 const RouteItems = ({ name, description = null, path }) => {
-	const { state, updateState } = useContext(Context)
+	const { updateNavMenuState } = useToggleMobileNavContext()
 
 	return (
 		// This is basically the individual route item
@@ -24,7 +24,7 @@ const RouteItems = ({ name, description = null, path }) => {
 				<div className={styles.itemContainer}>
 					<Link href={path}>
 						<a>
-							<h2 onClick={() => updateState(false)}>{name}</h2>
+							<h2 onClick={updateNavMenuState}>{name}</h2>
 						</a>
 					</Link>
 				</div>
