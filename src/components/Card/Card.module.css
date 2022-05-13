@@ -1,0 +1,50 @@
+.entityContainer {
+	position: relative;
+	background-color: blue;
+	max-width: 40rem;
+	max-height: 60rem;
+	border: solid 3px black;
+	border-radius: 10%;
+}
+
+.cardContainer {
+	display: block;
+	max-width: 40rem;
+	max-height: 50rem;
+	display: flex;
+	flex-direction: column;
+}
+
+.cardImage {
+	display: block;
+	border-radius: 10%;
+}
+
+.cardInfo {
+	display: flex;
+	flex-direction: row;
+	padding: 0 1.4rem;
+}
+
+.cardDescription {
+	position: absolute;
+	color: red;
+	font-size: 3.6rem;
+	top: 30%;
+	left: 30%;
+	margin: 0 0.5rem;
+	font-weight: 400;
+	line-height: 1.5;
+}
+
+.cardName {
+	margin: 2rem 0.5rem;
+}
+
+.requiresCacBox {
+	padding: 2rem 2rem;
+	font-size: 2rem;
+	border: solid 3px black;
+	margin: 0.5rem;
+	border-radius: 25%;
+}

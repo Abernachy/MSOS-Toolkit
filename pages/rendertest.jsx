@@ -1,12 +1,23 @@
 import React from 'react'
-import { routes } from '../src/utils/routes.jsx'
+import Card from '../src/components/Card/Card'
+import { userResources } from '../src/utils/resources/userResources'
 
 const rendertest = () => {
-	const serviceRoutes = routes.navLinks[1]
-	const servicesHeading = routes.navLinks[1].name
-	const allRoutes = routes.navLinks
-
-	return <div></div>
+	const { name, path, img, requireCac, description } = userResources[0]
+	{
+		console.log(`${img} vs '/imgs/alawone.jpg'`)
+	}
+	return (
+		<div>
+			<Card
+				name={name}
+				path={path}
+				img={img}
+				requireCac={requireCac}
+				description={description}
+			/>
+		</div>
+	)
 }
 
 export default rendertest

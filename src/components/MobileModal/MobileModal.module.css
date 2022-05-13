@@ -17,10 +17,13 @@
 }
 
 .modalContainer {
-	z-index: 1;
 	position: absolute;
-	border-top: 3px solid black;
+	border-top: 3px solid var(--sq-gold);
 }
 .navItems li {
 	list-style: none;
 }
+
+/* .navItems:first-child {
+	border-top: 5px solid black;
+} */

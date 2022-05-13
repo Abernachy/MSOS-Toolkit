@@ -31,9 +31,7 @@ const MobileModal = ({ navLinks }) => {
 			<div
 				//Creates an area under the mobile nav menu that the use can click and it will close the menu
 				className={styles.outsideMobileMenu}
-				onClick={updateNavMenuState}>
-				other stuff div
-			</div>
+				onClick={updateNavMenuState}></div>
 		</div>
 	)
 }
