@@ -1,7 +1,7 @@
 // Ideas for here?
 /*
 { name:
-	type: file | link
+	type: file | link | Regulation and Guidance | Downloadable Resource 
 	path:
 	requireCac:true / false
 	description
@@ -64,6 +64,13 @@ export let eagleResources = [
 		path: 'https://crewapp.com/app/login',
 		requireCac: false,
 		description: 'Crew App login',
+	},
+	{
+		name: 'GDSS',
+		type: 'link',
+		path: 'https://gdss.maf.ustranscom.mil/',
+		requireCac: true,
+		description: 'G2',
 	},
 	{
 		name: 'MSOS Sharepoint',
