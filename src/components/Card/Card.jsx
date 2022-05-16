@@ -1,14 +1,27 @@
-import React from 'react'
+import { useState } from 'react'
 import style from './Card.module.css'
 import Image from 'next/image'
 import Link from 'next/link'
 
 const Card = ({ name, path, img, requireCac, description }) => {
+	const [showDescription, setShowDescription] = useState(false)
+
+	const toggleDescription = () => {
+		setShowDescription(true)
+	}
+
+	const hideDescription = () => {
+		setShowDescription(false)
+	}
+
 	return (
 		<div className={style.entityContainer}>
 			<Link href={path}>
 				<div className={style.cardContainer}>
-					<section className={style.cardImage}>
+					<div
+						className={style.imageContainer}
+						onMouseEnter={toggleDescription}
+						onMouseLeave={hideDescription}>
 						<Image
 							src={img}
 							alt='The Law'
@@ -16,11 +29,20 @@ const Card = ({ name, path, img, requireCac, description }) => {
 							width={5000}
 							height={2815}
 							quality={100}
+							sizes={'100vw'}
 						/>
-						<div className={style.descriptionContainer}>
-							<p className={style.cardDescription}>{description}</p>
+					</div>
+
+					{showDescription ? (
+						<div>
+							<p
+								className={style.cardDescription}
+								onMouseEnter={toggleDescription}>
+								{description}
+							</p>
 						</div>
-					</section>
+					) : null}
+
 					<section className={style.cardInfo}>
 						<div>
 							<h3 className={style.cardName}>{name}</h3>

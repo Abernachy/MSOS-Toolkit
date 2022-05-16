@@ -70,7 +70,9 @@ const Navbar = ({ navLinks }) => {
 									/>
 								</svg>
 							</button>
-							{navMenuState && <MobileModal navLinks={navLinks} />}
+							<div>
+								{navMenuState && <MobileModal navLinks={navLinks} />}
+							</div>
 						</li>
 					</ul>
 				</div>

@@ -51,12 +51,12 @@
 	}
 
 	.mobileContainer {
+		position: static;
 		color: var(--sq-white);
 		background-color: var(--sq-blue);
 		border-bottom: 3px solid black;
-
 		width: 100vw;
-		z-index: 0;
+		z-index: 99;
 	}
 
 	.dropDownSvg {
