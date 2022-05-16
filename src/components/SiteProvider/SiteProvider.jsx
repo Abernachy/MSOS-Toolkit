@@ -18,6 +18,11 @@ export function SiteProvider({ children }) {
 
 	function toggleMenu() {
 		setMobileNavMenu((prevState) => !prevState)
+		if (document.body.style.overflow !== 'hidden') {
+			document.body.style.overflow = 'hidden'
+		} else {
+			document.body.style.overflow = 'scroll'
+		}
 	}
 
 	return (

@@ -1,7 +1,6 @@
 .overlay {
 	display: flex;
 	flex-direction: row;
-	z-index: 0;
 	position: fixed;
 	left: 0%;
 	top: 4.9rem;
@@ -17,7 +16,6 @@
 }
 
 .modalContainer {
-	position: absolute;
 	border-top: 3px solid var(--sq-gold);
 }
 .navItems li {

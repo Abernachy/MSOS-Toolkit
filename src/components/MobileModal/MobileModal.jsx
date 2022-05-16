@@ -1,5 +1,5 @@
 //Main Imports
-import React, { useContext } from 'react'
+import React from 'react'
 
 // css import
 import styles from './MobileModal.module.css'

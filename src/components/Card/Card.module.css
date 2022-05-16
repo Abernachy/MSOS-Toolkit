@@ -1,44 +1,71 @@
 .entityContainer {
-	position: relative;
-	background-color: blue;
-	max-width: 40rem;
-	max-height: 60rem;
+	max-width: 30rem;
+	max-height: 50rem;
+	overflow: hidden;
 	border: solid 3px black;
-	border-radius: 10%;
+	box-shadow: 0 3px 10px black;
+	z-index: 0;
+}
+
+.entityContainer:hover {
+	cursor: pointer;
+}
+
+.entityContainer:hover h3 {
+	text-decoration: underline;
+}
+
+.entityContainer:hover + .cardContainer {
+	filter: blur(1.5rem);
 }
 
 .cardContainer {
-	display: block;
+	/* position: relative; */
 	max-width: 40rem;
 	max-height: 50rem;
 	display: flex;
 	flex-direction: column;
+	object-fit: contain;
+	background-color: black;
 }
 
-.cardImage {
+.imageContainer {
 	display: block;
-	border-radius: 10%;
+}
+
+.imageContainer:hover {
+	filter: blur(1.5rem);
+}
+
+.imageContainer p:hover {
+	filter: blur(1.5rem);
+}
+
+.cardDescription {
+	display: inline-block;
+	/* position: absolute; */
+	color: var(--sq-white);
+	font-size: 2rem;
+	top: 20%;
+	left: 25%;
+	margin: 0 0.5rem;
+	font-weight: 700;
+	line-height: 1.5;
 }
 
 .cardInfo {
 	display: flex;
 	flex-direction: row;
 	padding: 0 1.4rem;
-}
-
-.cardDescription {
-	position: absolute;
-	color: red;
-	font-size: 3.6rem;
-	top: 30%;
-	left: 30%;
-	margin: 0 0.5rem;
-	font-weight: 400;
-	line-height: 1.5;
+	border-top: solid 3px black;
+	background-color: var(--sq-blue);
+	color: var(--sq-white);
+	align-items: center;
 }
 
 .cardName {
-	margin: 2rem 0.5rem;
+	margin: 2rem 1rem;
+	font-size: 1.3em;
 }
 
 .requiresCacBox {

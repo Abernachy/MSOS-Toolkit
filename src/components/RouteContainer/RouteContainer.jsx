@@ -35,7 +35,7 @@ const RouteContainer = ({ heading, subRoutes = null, route }) => {
 				<div className={styles.line} />
 				<ul className={styles.list}>
 					{/* Optional chaining (?.), this way, if we return something
-							with no routes, it wont crash due to routes being undefined */}
+							with no subroutes, it wont crash due to subroutes being undefined */}
 					{subRoutes?.map((item, index) => (
 						<li key={index}>
 							<RouteItems
