@@ -1,59 +1,54 @@
-.entityContainer {
+.cardContainer {
 	max-width: 30rem;
 	max-height: 50rem;
 	overflow: hidden;
 	border: solid 3px black;
 	box-shadow: 0 3px 10px black;
-	z-index: 0;
+
+	display: flex;
+	flex-direction: column;
 }
 
-.entityContainer:hover {
+.cardContainer:hover {
 	cursor: pointer;
 }
 
-.entityContainer:hover h3 {
+.cardContainer:hover h3 {
 	text-decoration: underline;
 }
 
-.entityContainer:hover + .cardContainer {
-	filter: blur(1.5rem);
-}
-
-.cardContainer {
-	/* position: relative; */
-	max-width: 40rem;
-	max-height: 50rem;
-	display: flex;
-	flex-direction: column;
-	object-fit: contain;
+.imageBlock {
 	background-color: black;
+	position: relative;
 }
 
 .imageContainer {
 	display: block;
+	background-color: black;
 }
 
-.imageContainer:hover {
+.imageBlock .imageContainer:hover {
 	filter: blur(1.5rem);
+	background-color: black;
 }
 
-.imageContainer p:hover {
+.imageContainer:hover p {
 	filter: blur(1.5rem);
 }
 
 .cardDescription {
-	display: inline-block;
-	/* position: absolute; */
 	color: var(--sq-white);
 	font-size: 2rem;
-	top: 20%;
-	left: 25%;
-	margin: 0 0.5rem;
+	top: 5%;
+	left: 5%;
+	margin: 0 1rem;
 	font-weight: 700;
 	line-height: 1.5;
+	position: absolute;
+	color: var(--sq-white);
 }
 
-.cardInfo {
+.cardInfoBlock {
 	display: flex;
 	flex-direction: row;
 	padding: 0 1.4rem;
@@ -61,6 +56,7 @@
 	background-color: var(--sq-blue);
 	color: var(--sq-white);
 	align-items: center;
+	height: 100%;
 }
 
 .cardName {
