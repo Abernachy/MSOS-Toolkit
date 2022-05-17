@@ -15,35 +15,37 @@ const Card = ({ name, path, img, requireCac, description }) => {
 	}
 
 	return (
-		<div className={style.entityContainer}>
-			<Link href={path}>
-				<div className={style.cardContainer}>
-					<div
-						className={style.imageContainer}
-						onMouseEnter={toggleDescription}
-						onMouseLeave={hideDescription}>
-						<Image
-							src={img}
-							alt='The Law'
-							layout='responsive'
-							width={5000}
-							height={2815}
-							quality={100}
-							sizes={'100vw'}
-						/>
-					</div>
+		<>
+			<Link href={path} passHref>
+				<div
+					className={style.cardContainer}
+					onMouseLeave={hideDescription}>
+					<section className={style.imageBlock}>
+						<div
+							className={style.imageContainer}
+							onMouseEnter={toggleDescription}>
+							<Image
+								src={img}
+								alt='The Law'
+								layout='responsive'
+								width={5000}
+								height={2815}
+								quality={100}
+								sizes={'100vw'}
+								className={style.cardImage}
+							/>
+						</div>
 
-					{showDescription ? (
-						<div>
+						{showDescription ? (
 							<p
 								className={style.cardDescription}
 								onMouseEnter={toggleDescription}>
 								{description}
 							</p>
-						</div>
-					) : null}
+						) : null}
+					</section>
 
-					<section className={style.cardInfo}>
+					<section className={style.cardInfoBlock}>
 						<div>
 							<h3 className={style.cardName}>{name}</h3>
 						</div>
@@ -56,7 +58,7 @@ const Card = ({ name, path, img, requireCac, description }) => {
 					</section>
 				</div>
 			</Link>
-		</div>
+		</>
 	)
 }
 

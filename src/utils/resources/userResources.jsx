@@ -3,7 +3,7 @@ export let userResources = [
 		name: 'Air Transport Test Loading Activity (ATTLA)',
 		type: 'Regulation and Guidance',
 		path: 'https://intelshare.intelink.gov/sites/attla',
-		img: '/imgs/alawtwo.jpg',
+		img: 'https://media.defense.gov/2018/Mar/14/2001890075/-1/-1/0/180306-F-ZZ999-0001.JPG',
 		requireCac: true,
 		description: 'ATTLA site for cert letters',
 	},
@@ -27,7 +27,7 @@ export let userResources = [
 		name: 'DTR Part 3 Appendix B - Unit Airlift',
 		type: 'Regulation and Guidance',
 		path: 'https://www.ustranscom.mil/dtr/part-iii/dtr_part_iii_303.pdf',
-		img: '/imgs/alawone.jpg',
+		img: '/imgs/transCom.png',
 		requireCaC: false,
 		description:
 			'General information about Unit Deployment requirements and Airlift planning.',
@@ -36,7 +36,7 @@ export let userResources = [
 		name: 'DTR Part 3 Appendix J - Hazardous Materials (HAZMAT) Certification and Mobility Procedures ',
 		type: 'Regulation and Guidance',
 		path: 'https://www.ustranscom.mil/dtr/part-iii/dtr_part_iii_app_j.pdf',
-		img: '/imgs/alawone.jpg',
+		img: '/imgs/transCom.png',
 		requireCac: false,
 		description:
 			'Hazardous Materials handling requirements for joint airlift',
@@ -45,7 +45,7 @@ export let userResources = [
 		name: 'DTR Part 3 Appendix O - Preparation of Equipment and Supplies for Joint Inspection',
 		type: 'Regulation and Guidance',
 		path: 'https://www.ustranscom.mil/dtr/part-iii/dtr_part_iii_app_o.pdf',
-		img: '/imgs/alawone.jpg',
+		img: '/imgs/transCom.png',
 		requireCac: false,
 		description:
 			'How to prepare your equipment for the Air Force Joint Inspection so you can pass it',
@@ -54,7 +54,7 @@ export let userResources = [
 		name: 'DTR Part 3 Appendix P - Center of Balance Determination - Finding CB',
 		type: 'Regulation and Guidance',
 		path: 'https://www.ustranscom.mil/dtr/part-iii/dtr_part_iii_app_p.pdf',
-		img: '/imgs/alawone.jpg',
+		img: '/imgs/transCom.png',
 		requireCaC: false,
 		description:
 			'How to calculate center of balance and correctly mark equipment',
@@ -83,7 +83,7 @@ export let userResources = [
 		img: '/imgs/downloadimg.jpg',
 		requireCac: false,
 		description:
-			"A downloadable Shipper's Declaration for Dangerous Goods.  3x copies are required for each piece of hazardous item on or with the cargo.",
+			"A downloadable Shipper's Declaration for Dangerous Goods.",
 	},
 	{
 		name: '(PDF) Joint Airlift Inspection Record/Checklist',
@@ -107,7 +107,7 @@ export let userResources = [
 		name: 'Munitions History Program',
 		type: 'Regulation and Guidance',
 		path: 'https://mhp.redstone.army.mil/MHPMAIN.ASPX',
-		img: '/imgs/alawone',
+		img: '/imgs/transCom.png',
 		requireCac: true,
 		description: 'Provides ammo specification data',
 	},
