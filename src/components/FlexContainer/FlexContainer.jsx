@@ -1,8 +1,8 @@
-import style from './GridContainer.module.css'
+import style from './FlexContainer.module.css'
 const GridContainer = ({ children }) => {
 	return (
 		// Using this for placing resources in
-		<div className={style.GridContainer}>{children}</div>
+		<div className={style.FlexContainer}>{children}</div>
 	)
 }
 

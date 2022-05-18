@@ -12,6 +12,8 @@
 	top: 27%;
 	height: 100vh;
 	width: 100vh;
+	background-color: black;
+	opacity: 0.5;
 }
 
 .modalContainer {
@@ -22,7 +24,3 @@
 .navItems li {
 	list-style: none;
 }
-
-/* .navItems:first-child {
-	border-top: 5px solid black;
-} */
