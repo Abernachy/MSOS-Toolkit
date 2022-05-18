@@ -60,12 +60,13 @@ export let userResources = [
 			'How to calculate center of balance and correctly mark equipment',
 	},
 	{
-		name: 'ICODES',
+		name: 'Integrated Computerized Deployment System (ICODES)',
 		type: 'Load Planning',
 		path: 'https://eta-teams.transport.mil',
 		img: '/imgs/lemon.jpg',
 		requireCac: true,
-		description: 'ICODES load planning',
+		description:
+			'Integrated Computerized Deployment System (ICODES) load planning',
 	},
 	{
 		name: 'JALP Class Registration',

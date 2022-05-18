@@ -21,21 +21,6 @@ const Card = ({ name, path, img, requireCac, description }) => {
 					className={style.cardContainer}
 					onMouseLeave={hideDescription}>
 					<section className={style.imageBlock}>
-						<div
-							className={style.imageContainer}
-							onMouseEnter={toggleDescription}>
-							<Image
-								src={img}
-								alt='The Law'
-								layout='responsive'
-								width={5000}
-								height={2815}
-								quality={100}
-								sizes={'100vw'}
-								className={style.cardImage}
-							/>
-						</div>
-
 						{showDescription ? (
 							<p
 								className={style.cardDescription}
@@ -43,6 +28,20 @@ const Card = ({ name, path, img, requireCac, description }) => {
 								{description}
 							</p>
 						) : null}
+						<div
+							className={style.imageContainer}
+							onMouseEnter={toggleDescription}>
+							<Image
+								src={img}
+								alt='The Law'
+								layout='responsive'
+								width={1920}
+								height={1080}
+								quality={100}
+								sizes={'100vw'}
+								className={style.cardImage}
+							/>
+						</div>
 					</section>
 
 					<section className={style.cardInfoBlock}>

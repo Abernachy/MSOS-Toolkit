@@ -1,0 +1,9 @@
+.FlexContainer {
+	margin: 2rem 3rem auto;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	flex: auto;
+	justify-content: center;
+	gap: 2rem 2rem;
+}
