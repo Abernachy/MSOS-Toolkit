@@ -18,11 +18,11 @@ export const routes = {
 					description: 'Need help preparing for Joint-Inspection',
 					path: '/services/eagle-services',
 				},
-				{
-					name: 'COMSEC Services',
-					description: 'Need help with COMSEC Equipment',
-					path: '/services/comsec-services',
-				},
+				// {
+				// 	name: 'COMSEC Services',
+				// 	description: 'Need help with COMSEC Equipment',
+				// 	path: '/services/comsec-services',
+				// },
 			],
 		},
 		{
@@ -44,11 +44,11 @@ export const routes = {
 					description: 'Resources for EAGLEs',
 					path: '/resources/eagle-resources',
 				},
-				{
-					name: 'COMSEC Resources',
-					description: 'Resources for COMSEC',
-					path: '/resources/amlo-resources',
-				},
+				// {
+				// 	name: 'COMSEC Resources',
+				// 	description: 'Resources for COMSEC',
+				// 	path: '/resources/amlo-resources',
+				// },
 			],
 		},
 		{

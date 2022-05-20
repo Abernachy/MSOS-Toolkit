@@ -5,7 +5,7 @@ const SiteContext = createContext()
 const ToggleMobileNavContext = createContext()
 
 export function useAppContext() {
-	return useContext(AppContext)
+	return useContext(SiteContext)
 }
 
 export function useToggleMobileNavContext() {
