@@ -149,7 +149,7 @@ export let userResources = [
 	{
 		//Placeholder for the single form 2775 pallet identifier
 		name: '(PDF) DDForm 2775 Pallet Identifier',
-		type: 'Downloadable Resources',
+		type: 'Downloadable Resourcses',
 		path: 'https://www.esd.whs.mil/Portals/54/Documents/DD/forms/dd/dd2775.pdf',
 		img: '/imgs/downloadimg.jpg',
 		requireCac: false,
