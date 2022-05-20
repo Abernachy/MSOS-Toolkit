@@ -2,6 +2,7 @@ import React from 'react'
 import Card from '../src/components/Card/Card'
 import FlexContainer from '../src/components/FlexContainer/FlexContainer'
 import { userResources } from '../src/utils/resources/userResources'
+import { resourceBuilder } from '../src/utils/functions/utilityFunctions'
 
 const rendertest = () => {
 	return (
@@ -10,6 +11,7 @@ const rendertest = () => {
 				{userResources.map(
 					({ name, path, img, requireCac, description }, index) => (
 						<Card
+							key={index}
 							name={name}
 							path={path}
 							img={img}

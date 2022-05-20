@@ -26,7 +26,7 @@ export let userResources = [
 	{
 		name: 'DTR Part 3 Appendix B - Unit Airlift',
 		type: 'Regulation and Guidance',
-		path: 'https://www.ustranscom.mil/dtr/part-iii/dtr_part_iii_303.pdf',
+		path: 'https://www.ustranscom.mil/dtr/part-iii/dtr_part_iii_app_b.pdf',
 		img: '/imgs/transCom.png',
 		requireCaC: false,
 		description:
@@ -69,7 +69,7 @@ export let userResources = [
 			'Integrated Computerized Deployment System (ICODES) load planning',
 	},
 	{
-		name: 'JALP Class Registration',
+		name: 'Joint Aircraft Load Planner Course Class Registration',
 		type: 'Load Planning',
 		path: 'https://www.milsuite.mil/book/groups/joint-air-mobility-support-jams',
 		img: '/imgs/lemon.jpg',
@@ -78,7 +78,7 @@ export let userResources = [
 			'How to register for JALP classes. JALP is required to be an airload planner for your unit.',
 	},
 	{
-		name: '(PDF) Shippers Declaration for Dangerous Goods',
+		name: 'AMC-IMT1033 (PDF) Shippers Declaration for Dangerous Goods ',
 		type: 'Downloadable Resources',
 		path: '/files/AMC Form 1033.pdf',
 		img: '/imgs/downloadimg.jpg',
@@ -87,7 +87,7 @@ export let userResources = [
 			"A downloadable Shipper's Declaration for Dangerous Goods.",
 	},
 	{
-		name: '(PDF) Joint Airlift Inspection Record/Checklist',
+		name: '(PDF) DDForm 2133 Joint Airlift Inspection Record/Checklist ',
 		type: 'Downloadable Resources',
 		path: '/files/DD2133.pdf',
 		img: '/imgs/downloadimg.jpg',
@@ -96,7 +96,7 @@ export let userResources = [
 			'A Joint Inspection Checklist.  Completion of this by the JI is required to load equipment on a Cargo Aircraft ',
 	},
 	{
-		name: '(PDF) DDForm1387-2 Special Handling Certification ',
+		name: '(PDF) DDForm1387-2 Special Handling Certification (Automatic Triplicate) ',
 		type: 'Downloadable Resources',
 		path: '/files/DDForm 1387-2.pdf',
 		img: '/imgs/downloadimg.jpg',
@@ -104,6 +104,59 @@ export let userResources = [
 		description:
 			'Used for special handling of sensitive or special items like weapons, comm equipment, etc',
 	},
+	/*
+	{
+		//Placeholder for the single form 1387-2 Single Form
+		name: '(PDF) DDForm1387-2 Special Handling Certification (Automatic Triplicate) ',
+		type: 'Downloadable Resources',
+		path: '/files/DDForm 1387-2.pdf',
+		img: '/imgs/downloadimg.jpg',
+		requireCac: false,
+		description:
+			'Used for special handling of sensitive or special items like weapons, comm equipment, etc',
+	},
+	{
+		//Placeholder for the single form 2133 Pax Manifest
+		name: '(PDF) DDForm1387-2 Special Handling Certification (Automatic Triplicate) ',
+		type: 'Downloadable Resources',
+		path: '/files/DDForm 1387-2.pdf',
+		img: '/imgs/downloadimg.jpg',
+		requireCac: false,
+		description:
+			'Used for special handling of sensitive or special items like weapons, comm equipment, etc',
+	},
+	*/
+	{
+		//Placeholder for the single form 1387 shipping label
+		name: '(PDF) DDForm1387 Military Shipping Label) ',
+		type: 'Downloadable Resources',
+		path: 'https://www.esd.whs.mil/Portals/54/Documents/DD/forms/dd/dd1387.pdf',
+		img: '/imgs/downloadimg.jpg',
+		requireCac: false,
+		description: 'Military Shipping Label',
+	},
+
+	{
+		//Placeholder for the single form 1385 load plan
+		name: '(PDF) DDForm 1385 Cargo Manifest ',
+		type: 'Downloadable Resources',
+		path: 'https://www.esd.whs.mil/Portals/54/Documents/DD/forms/dd/dd1385.pdf',
+		img: '/imgs/downloadimg.jpg',
+		requireCac: false,
+		description: 'Breakdown of the cargo on the aircraft, required for JI',
+	},
+
+	{
+		//Placeholder for the single form 2775 pallet identifier
+		name: '(PDF) DDForm 2775 Pallet Identifier',
+		type: 'Downloadable Resourcses',
+		path: 'https://www.esd.whs.mil/Portals/54/Documents/DD/forms/dd/dd2775.pdf',
+		img: '/imgs/downloadimg.jpg',
+		requireCac: false,
+		description:
+			'Pallet Identifier goes on the pallet. You need one on the short side and one on the long side.',
+	},
+
 	{
 		name: 'Munitions History Program',
 		type: 'Regulation and Guidance',
