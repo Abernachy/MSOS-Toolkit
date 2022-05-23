@@ -25,7 +25,7 @@ const Navbar = ({ navLinks }) => {
 
 	return (
 		<header>
-			<nav className={navStyles.Nav}>
+			<nav className={navStyles.nav}>
 				<ul className={navStyles.deskItems}>
 					{navLinks.map((item, index) => (
 						<li key={index}>

@@ -1,8 +1,13 @@
 /* Base component design */
-.Nav {
+.nav {
 	background-color: var(--sq-blue);
 	color: var(--sq-white);
 	max-height: 5rem;
+	/*I have to set this in order for the navbar grid to work correctly, not sure why */
+	/* position: sticky;
+	top: 0;
+	left: 0;
+	right: 0; */
 }
 
 /* Desktop View */
@@ -44,12 +49,7 @@
 	.deskItems {
 		display: none;
 	}
-	.Nav {
-		/* position: fixed; */
-		top: 0;
-		left: 0;
-		right: 0;
-	}
+
 	.mobileItems {
 		display: flex;
 		flex-direction: row;
