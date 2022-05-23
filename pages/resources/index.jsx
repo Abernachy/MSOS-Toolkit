@@ -1,9 +1,16 @@
-import React from 'react'
+import style from './styles/resourcesMain.module.css'
 
 const index = () => {
 	return (
 		<div>
-			<h1>THIS IS THE RESOURCES INDEX BILLY</h1>
+			<section>
+				<h1>RESOURCES</h1>
+			</section>
+
+			<p>
+				Whether you are a customer, EAGLE, or an AMLO resources are
+				provided below for your use
+			</p>
 		</div>
 	)
 }

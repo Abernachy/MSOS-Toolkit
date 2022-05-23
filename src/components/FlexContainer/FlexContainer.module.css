@@ -1,5 +1,4 @@
 .FlexContainer {
-	margin: 2rem 3rem auto;
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
