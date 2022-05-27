@@ -55,6 +55,14 @@ const Card = ({ name, path, img, requireCac, description }) => {
 							</div>
 						) : null}
 					</section>
+					<section className={style.buttonSection}>
+						<Link href={path} passhref>
+							<button className={style.resourceButton}>
+								VIEW RESOURCE
+							</button>
+						</Link>
+					</section>
+					
 				</div>
 			</Link>
 		</>

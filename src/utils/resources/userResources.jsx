@@ -127,7 +127,6 @@ export let userResources = [
 	},
 	*/
 	{
-		//Placeholder for the single form 1387 shipping label
 		name: '(PDF) DDForm1387 Military Shipping Label) ',
 		type: 'Downloadable Resources',
 		path: 'https://www.esd.whs.mil/Portals/54/Documents/DD/forms/dd/dd1387.pdf',
@@ -137,7 +136,6 @@ export let userResources = [
 	},
 
 	{
-		//Placeholder for the single form 1385 load plan
 		name: '(PDF) DDForm 1385 Cargo Manifest ',
 		type: 'Downloadable Resources',
 		path: 'https://www.esd.whs.mil/Portals/54/Documents/DD/forms/dd/dd1385.pdf',
@@ -147,9 +145,8 @@ export let userResources = [
 	},
 
 	{
-		//Placeholder for the single form 2775 pallet identifier
 		name: '(PDF) DDForm 2775 Pallet Identifier',
-		type: 'Downloadable Resourcses',
+		type: 'Downloadable Resources',
 		path: 'https://www.esd.whs.mil/Portals/54/Documents/DD/forms/dd/dd2775.pdf',
 		img: '/imgs/downloadimg.jpg',
 		requireCac: false,
