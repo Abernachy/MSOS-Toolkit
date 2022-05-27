@@ -3,6 +3,7 @@
 { name:
 	type: file | link | Regulation and Guidance | Downloadable Resource 
 	path:
+	img:
 	requireCac:true / false
 	description
 	
