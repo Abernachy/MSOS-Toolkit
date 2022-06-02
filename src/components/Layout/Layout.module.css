@@ -2,6 +2,7 @@
 	display: grid;
 	grid-template-columns: 10% 1fr 1fr 10%;
 	grid-template-rows: 5rem 1fr 2.5rem;
+	row-gap: 1rem;
 }
 
 .navWrapper {
@@ -17,9 +18,10 @@
 }
 
 .footerWrapper {
+	display: inline-block;
 	grid-row: 4 / -1;
 	grid-column: 1 / -1;
-	position: sticky;
-	bottom: 0;
-	left: 0;
+	position: relative;
+	bottom: 0%;
+	left: 0%;
 }

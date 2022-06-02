@@ -10,24 +10,15 @@
 .resourceList {
 	border-top: solid 3px var(--sq-blue);
 	display: flex;
-	flex-direction: column;
-	row-gap: 2rem;
+	flex-direction: row;
+	flex-wrap: wrap;
 }
 
 .resourceList li {
-	border-bottom: solid 3px, var(--sq-blue);
-	margin: 0 3rem auto;
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
 	flex-wrap: wrap;
-	cursor: pointer;
 	gap: 1rem 1rem;
-	flex-grow: 1;
 	justify-content: center;
 	align-items: center;
-}
-
-.resourceList li:hover {
-	background: var(--sq-gold);
-	color: var(--sq-white);
 }

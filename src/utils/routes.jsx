@@ -44,6 +44,11 @@ export const routes = {
 					description: 'Resources for EAGLEs',
 					path: '/resources/eagle-resources',
 				},
+				{
+					name: 'Newcomer Resources',
+					description: 'Resources for new and upcoming squadron members',
+					path: '/resources/newcomer-resources',
+				},
 				// {
 				// 	name: 'COMSEC Resources',
 				// 	description: 'Resources for COMSEC',

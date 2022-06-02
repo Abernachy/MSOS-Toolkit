@@ -15,37 +15,46 @@ const index = () => {
 				</section>
 				<section>
 					<p>
-						Whether you are a 621 MSOS customer, an EAGLE member, or an
-						AMLO, resources are provided below at no cost to you.
+						Whether you are a 621 MSOS customer, an EAGLE member, an AMLO,
+						or a future member of the squadron (welcome) resources are
+						provided below at no cost to you.
 					</p>
 					<ul className={style.resourceList}>
-						<Link href='/resources/user-resources'>
-							<li>
-								<h2>Customer Resources</h2>
-								<p> Resources for customer use</p>
-								<Link href='/resources/user-resources'>
-									<button>VIEW RESOURCES</button>
-								</Link>
-							</li>
-						</Link>
-						<Link href='./resources/eagle-resources'>
-							<li>
-								<h2>EAGLE Resources</h2>
-								<p> Resources for EAGLE use</p>
-								<Link href='./resources/eagle-resources'>
-									<button>VIEW RESOURCES</button>
-								</Link>
-							</li>
-						</Link>
-						<Link href='./resources/amlo-resources'>
-							<li>
-								<h2>AMLO Resources</h2>
-								<p> Resources for AMLO use</p>
-								<Link href='./resources/amlo-resources'>
-									<button>VIEW RESOURCES</button>
-								</Link>
-							</li>
-						</Link>
+						<li>
+							<h3>Customer Resources</h3>
+							<Card
+								name='Customer Resources'
+								path='./resources/user-resources'
+								img='/imgs/airTranspulling.webp'
+								description='Resources for customers'
+							/>
+						</li>
+						<li>
+							<h3>621 MSOS Member Resources</h3>
+							<FlexContainer>
+								<Card
+									name='AMLO Resources'
+									path='./resources/amlo-resources'
+									img='/imgs/AMLO.webp'
+									description=' 621 MSOS resources for AMLOs'
+								/>
+								<Card
+									name='EAGLE Resources'
+									path='./resources/eagle-resources'
+									img='/imgs/lemon.jpg'
+									description=' 621 MSOS resources for EAGLEs'
+								/>
+							</FlexContainer>
+						</li>
+						<li>
+							<h3>Newcomer Resources</h3>
+							<Card
+								name='Newcomer Resources'
+								path='./resources/newcomer-resources'
+								img='/imgs/JBMDL-Welcome.webp'
+								description='Resources for new and upcoming squadron members'
+							/>
+						</li>
 					</ul>
 				</section>
 			</div>

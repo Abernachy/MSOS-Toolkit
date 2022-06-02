@@ -3,7 +3,7 @@ import style from './Card.module.css'
 import Image from 'next/image'
 import Link from 'next/link'
 
-const Card = ({ name, path, img, requireCac, description }) => {
+const Card = ({ name, path, img, requireCac = false, description }) => {
 	const [showDescription, setShowDescription] = useState(false)
 
 	const toggleDescription = () => {
@@ -55,6 +55,7 @@ const Card = ({ name, path, img, requireCac, description }) => {
 							</div>
 						) : null}
 					</section>
+
 					<section className={style.buttonSection}>
 						<Link href={path} passhref>
 							<button className={style.resourceButton}>
@@ -62,7 +63,6 @@ const Card = ({ name, path, img, requireCac, description }) => {
 							</button>
 						</Link>
 					</section>
-					
 				</div>
 			</Link>
 		</>
