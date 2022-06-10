@@ -1,0 +1,33 @@
+.topHeader {
+	font-size: 4rem;
+	font-weight: 700;
+	color: var(--sq-blue);
+	text-align: center;
+}
+
+.mainBody {
+	color: var(--sq-blue);
+	font-size: 2.4rem;
+	line-height: 1.5;
+	margin: 1.5rem 0;
+}
+
+.lineDivider {
+	border: solid 5px var(--sq-gold);
+	background-color: var(--sq-gold);
+	margin-bottom: 1.5rem;
+}
+
+.resourcesSection {
+	margin: 2rem auto;
+}
+
+.headerBlock {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	border: solid 5px black;
+	font-size: 2.4rem;
+	background-color: var(--sq-blue);
+	color: var(--sq-white);
+}

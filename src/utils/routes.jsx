@@ -30,9 +30,9 @@ export const routes = {
 			path: '/resources',
 			subRoutes: [
 				{
-					name: 'User Resources',
+					name: 'Customer Resources',
 					description: 'Free resources for customers',
-					path: '/resources/user-resources',
+					path: '/resources/customer-resources',
 				},
 				{
 					name: 'AMLO Resources',
@@ -62,13 +62,3 @@ export const routes = {
 		},
 	],
 }
-
-// Ideas for here?
-/*
-{ name:
-	type: file | link
-	path:
-	requireCac:true / false
-	description
-	
-*/
