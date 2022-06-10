@@ -1,17 +1,14 @@
 import React from 'react'
 import Card from '../src/components/Card/Card'
-import FlexContainer from '../src/components/FlexContainer/FlexContainer'
-import { userResources } from '../src/utils/resources/userResources'
+import ResourceContainer from '../src/components/ResourceContainer/ResourceContainer'
+import { customerResources } from '../src/utils/resources/customerResources'
 import { resourceBuilder } from '../src/utils/functions/utilityFunctions'
 
 const rendertest = () => {
-	
 	return (
 		<div>
-
-			
-			<FlexContainer>
-				{userResources.map(
+			<ResourceContainer>
+				{customerResources.map(
 					({ name, path, img, requireCac, description }, index) => (
 						<Card
 							key={index}
@@ -23,7 +20,7 @@ const rendertest = () => {
 						/>
 					)
 				)}
-			</FlexContainer>
+			</ResourceContainer>
 		</div>
 	)
 }
