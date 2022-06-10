@@ -1,40 +1,64 @@
-const amloResources = () => {
+import { useMemo, useState } from 'react'
+import style from './styles/globalResources.module.css'
+import Card from '../../src/components/Card/Card'
+import ResourceContainer from '../../src/components/ResourceContainer/ResourceContainer'
+
+import { resourceBuilder } from '../../src/utils/functions/utilityFunctions'
+import { amloResources } from '../../src/utils/resources/amloResources'
+
+const AmloResources = () => {
+	const [userAssets, setUserAssets] = useState(amloResources)
+
+	const stuff = useMemo(
+		() => resourceBuilder(userAssets, 'type'),
+		[userAssets]
+	)
+	const [amloResourcesList, setAmloResourcesList] = useState(stuff)
+
 	return (
 		<div>
-			<section>
-				<h1>Stuff and more stuff</h1>
-				<p>
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore
-					molestiae sapiente quaerat laudantium vero assumenda. Odio quia
-					consequuntur, velit facilis quam architecto asperiores quae quos?
-				</p>
+			<section className={style.topHeader}>
+				<h1>AMLO Resources</h1>
 			</section>
-			<section>
-				<h1>Stuff and more stuff</h1>
+			<section className={style.mainBody}>
 				<p>
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore
-					molestiae sapiente quaerat laudantium vero assumenda. Odio quia
-					consequuntur, velit facilis quam architecto asperiores quae quos?
+					Below are resources for our valued 621 MSOS AMLOs. If you believe
+					a resource is missing that should be added, please do not
+					hesitate to reach out to us.
 				</p>
+				<div className={style.lineDivider} />
 			</section>
-			<section>
-				<h1>Stuff and more stuff</h1>
-				<p>
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore
-					molestiae sapiente quaerat laudantium vero assumenda. Odio quia
-					consequuntur, velit facilis quam architecto asperiores quae quos?
-				</p>
-			</section>
-			<section>
-				<h1>Stuff and more stuff</h1>
-				<p>
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore
-					molestiae sapiente quaerat laudantium vero assumenda. Odio quia
-					consequuntur, velit facilis quam architecto asperiores quae quos?
-				</p>
+			<section className={style.resourcesSection}>
+				{amloResourcesList.map((item, index) => (
+					<div className={style.resourcesContainer} key={index}>
+						<section className={style.headerBlock}>
+							<h2>{item.resourceType}</h2>
+							<h2>Total Resources: {item.resourcesList.length}</h2>
+						</section>
+
+						<ResourceContainer>
+							{item.resourcesList.map(
+								(
+									{ name, type, path, img, requireCac, description },
+									index
+								) => (
+									<Card
+										key={index}
+										name={name}
+										type={type}
+										path={path}
+										img={img}
+										requireCac={requireCac}
+										description={description}
+									/>
+								)
+							)}
+						</ResourceContainer>
+					</div>
+				))}
 			</section>
 		</div>
 	)
 }
 
-export default amloResources
+export default AmloResources

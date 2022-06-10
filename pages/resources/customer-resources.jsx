@@ -4,32 +4,32 @@ import Card from '../../src/components/Card/Card'
 import ResourceContainer from '../../src/components/ResourceContainer/ResourceContainer'
 
 import { resourceBuilder } from '../../src/utils/functions/utilityFunctions'
-import { eagleResources } from '../../src/utils/resources/eagleResources'
+import { customerResources } from '../../src/utils/resources/customerResources'
 
-const EagleResources = () => {
-	const [userAssets, setUserAssets] = useState(eagleResources)
+const CustomerResources = () => {
+	const [userAssets, setUserAssets] = useState(customerResources)
 
 	const stuff = useMemo(
 		() => resourceBuilder(userAssets, 'type'),
 		[userAssets]
 	)
-	const [eagleResourcesList, setEagleResourcesList] = useState(stuff)
+	const [customerResourcesList, setCustomerResourcesList] = useState(stuff)
 
 	return (
 		<div>
 			<section className={style.topHeader}>
-				<h1>EAGLE Resources</h1>
+				<h1>Customer Resources</h1>
 			</section>
 			<section className={style.mainBody}>
 				<p>
-					Below are resources for our valued 621 MSOS EAGLEs. If you
+					Below are resources for our valued 621 MSOS customers. If you
 					believe a resource is missing that should be added, please do not
 					hesitate to reach out to us.
 				</p>
 				<div className={style.lineDivider} />
 			</section>
 			<section className={style.resourcesSection}>
-				{eagleResourcesList.map((item, index) => (
+				{customerResourcesList.map((item, index) => (
 					<div className={style.resourcesContainer} key={index}>
 						<section className={style.headerBlock}>
 							<h2>{item.resourceType}</h2>
@@ -61,4 +61,4 @@ const EagleResources = () => {
 	)
 }
 
-export default EagleResources
+export default CustomerResources

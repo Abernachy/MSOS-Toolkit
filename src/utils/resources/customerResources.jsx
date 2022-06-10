@@ -1,4 +1,4 @@
-export let userResources = [
+export let customerResources = [
 	{
 		name: 'Air Transport Test Loading Activity (ATTLA)',
 		type: 'Regulation and Guidance',
@@ -25,7 +25,7 @@ export let userResources = [
 	},
 	{
 		name: 'DTR Part 3 Appendix B - Unit Airlift',
-		type: 'Regulation and Guidance',
+		type: 'DTR',
 		path: 'https://www.ustranscom.mil/dtr/part-iii/dtr_part_iii_app_b.pdf',
 		img: '/imgs/transCom.png',
 		requireCaC: false,
@@ -34,7 +34,7 @@ export let userResources = [
 	},
 	{
 		name: 'DTR Part 3 Appendix J - Hazardous Materials (HAZMAT) Certification and Mobility Procedures ',
-		type: 'Regulation and Guidance',
+		type: 'DTR',
 		path: 'https://www.ustranscom.mil/dtr/part-iii/dtr_part_iii_app_j.pdf',
 		img: '/imgs/transCom.png',
 		requireCac: false,
@@ -43,7 +43,7 @@ export let userResources = [
 	},
 	{
 		name: 'DTR Part 3 Appendix O - Preparation of Equipment and Supplies for Joint Inspection',
-		type: 'Regulation and Guidance',
+		type: 'DTR',
 		path: 'https://www.ustranscom.mil/dtr/part-iii/dtr_part_iii_app_o.pdf',
 		img: '/imgs/transCom.png',
 		requireCac: false,
@@ -52,7 +52,7 @@ export let userResources = [
 	},
 	{
 		name: 'DTR Part 3 Appendix P - Center of Balance Determination - Finding CB',
-		type: 'Regulation and Guidance',
+		type: 'DTR',
 		path: 'https://www.ustranscom.mil/dtr/part-iii/dtr_part_iii_app_p.pdf',
 		img: '/imgs/transCom.png',
 		requireCaC: false,
@@ -158,7 +158,7 @@ export let userResources = [
 		name: 'Munitions History Program',
 		type: 'Regulation and Guidance',
 		path: 'https://mhp.redstone.army.mil/MHPMAIN.ASPX',
-		img: '/imgs/transCom.png',
+		img: '/imgs/loadcrew.jpg',
 		requireCac: true,
 		description: 'Provides ammo specification data',
 	},

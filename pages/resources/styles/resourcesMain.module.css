@@ -7,18 +7,42 @@
 	margin: 2rem 2rem auto;
 }
 
+.resourceHeader {
+	font-size: 4rem;
+	font-weight: 700;
+	color: var(--sq-blue);
+	text-align: center;
+}
+
+.mainBody {
+	color: var(--sq-blue);
+	font-size: 2.4rem;
+	line-height: 1.5;
+	margin: 1.5rem 0;
+}
+
 .resourceList {
-	border-top: solid 3px var(--sq-blue);
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
+	flex-basis: 4;
+	justify-content: space-between;
 }
 
-.resourceList li {
+.resources {
+	border: solid 3px var(--sq-blue);
+}
+/* .resourceList li {
 	display: flex;
 	flex-direction: column;
 	flex-wrap: wrap;
 	gap: 1rem 1rem;
 	justify-content: center;
 	align-items: center;
+} */
+
+.lineDivider {
+	border: solid 5px var(--sq-gold);
+	background-color: var(--sq-gold);
+	margin-bottom: 1.5rem;
 }

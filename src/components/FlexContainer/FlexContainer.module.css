@@ -1,8 +1,0 @@
-.FlexContainer {
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	flex: auto;
-	justify-content: center;
-	/*gap: 2rem 2rem;*/
-}
