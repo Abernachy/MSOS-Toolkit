@@ -5,15 +5,8 @@ export let amloResources = [
 		path: 'https://www.google.com',
 		requireCac: false,
 		img: '/imgs/alawone.jpg',
-		description: 'This is your brain on drugs',
-	},
-	{
-		name: 'stuff',
-		type: 'Your face',
-		path: 'https://www.google.com',
-		requireCac: false,
-		img: '/imgs/alawone.jpg',
-		description: 'This is your brain on drugs',
+		description:
+			'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, dolores?',
 	},
 ]
 
