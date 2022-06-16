@@ -7,7 +7,7 @@ import { resourceBuilder } from '../src/utils/functions/utilityFunctions'
 const rendertest = () => {
 	return (
 		<div>
-			<ResourceContainer>
+			{/* <ResourceContainer>
 				{customerResources.map(
 					({ name, path, img, requireCac, description }, index) => (
 						<Card
@@ -20,7 +20,7 @@ const rendertest = () => {
 						/>
 					)
 				)}
-			</ResourceContainer>
+			</ResourceContainer> */}
 		</div>
 	)
 }
