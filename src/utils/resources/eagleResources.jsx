@@ -34,7 +34,7 @@ export let eagleResources = [
 		description: 'The squadron puckboard.',
 	},
 	{
-		name: 'Flight Manual Library',
+		name: 'AMC Flight Manual Publication Library',
 		type: 'Regulation and Guidance',
 		path: 'https://cs2.eis.af.mil/sites/12679/Aircrew%20Pubs%20Library/Forms/Better.aspx?RootFolder=%2Fsites%2F12679%2FAircrew%20Pubs%20Library%2FMaster%5FLibrary%5FVerified&FolderCTID=0x01200021370D19BF5D9F459D8FD907C237955A&View={701BF038-D3D9-416D-BBEC-BF178FBE44E9}',
 		img: '/imgs/alawone.jpg',
@@ -81,13 +81,5 @@ export let eagleResources = [
 		path: 'https://gdss.maf.ustranscom.mil/',
 		requireCac: true,
 		description: 'G2',
-	},
-	{
-		name: 'MSOS Sharepoint',
-		type: 'Squadron Resources',
-		img: '/imgs/MSOS.png',
-		path: 'https://usaf.dps.mil/sites/621MSOS',
-		requireCac: true,
-		description: 'Squadron SharePoint',
 	},
 ]

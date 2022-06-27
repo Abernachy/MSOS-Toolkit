@@ -21,6 +21,11 @@ const Card = ({ name, path, img, requireCac = false, description }) => {
 					className={style.cardContainer}
 					onMouseLeave={hideDescription}>
 					<section className={style.imageBlock}>
+						{requireCac ? (
+							<div>
+								<p className={style.requiresCacBox}>CAC Required</p>
+							</div>
+						) : null}
 						{showDescription ? (
 							<p
 								className={style.cardDescription}
@@ -48,12 +53,6 @@ const Card = ({ name, path, img, requireCac = false, description }) => {
 						<div>
 							<h3 className={style.cardName}>{name}</h3>
 						</div>
-
-						{requireCac ? (
-							<div>
-								<p className={style.requiresCacBox}>CAC Required</p>
-							</div>
-						) : null}
 					</section>
 
 					<section className={style.buttonSection}>
