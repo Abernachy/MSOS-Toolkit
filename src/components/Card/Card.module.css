@@ -1,5 +1,6 @@
 .cardContainer {
-	max-width: 32rem;
+	position: relative;
+	width: 25rem;
 	max-height: 50rem;
 	overflow: hidden;
 	border: solid 5px black;
@@ -11,6 +12,7 @@
 .cardContainer:hover {
 	cursor: pointer;
 	box-shadow: 0 5px 100px black;
+	transform: scale(1.05);
 }
 
 .cardContainer:hover h3 {
@@ -36,7 +38,8 @@
 .cardDescription {
 	color: var(--sq-white);
 	font-size: 2rem;
-	top: 5%;
+	top: 50%;
+	transform: translateY(-50%);
 	left: 5%;
 	margin: 0 1rem;
 	font-weight: 700;
@@ -64,11 +67,12 @@
 }
 
 .requiresCacBox {
+	text-align: center;
 	padding: 2rem 2rem;
 	font-size: 2rem;
 	border: solid 3px black;
 	margin: 0.5rem;
-	border-radius: 25%;
+	border-radius: 5%;
 	background-color: red;
 }
 
