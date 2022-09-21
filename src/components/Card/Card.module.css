@@ -31,7 +31,7 @@
 }
 
 .cardImage:hover {
-	filter: blur(8rem);
+	filter: blur(100rem);
 	background-color: black;
 }
 
@@ -68,11 +68,11 @@
 
 .requiresCacBox {
 	text-align: center;
-	padding: 2rem 2rem;
+	/* padding: 1rem 1rem; */
 	font-size: 2rem;
-	border: solid 3px black;
+	/* border: solid 3px black; */
 	margin: 0.5rem;
-	border-radius: 5%;
+	border-radius: 20%;
 	background-color: red;
 }
 

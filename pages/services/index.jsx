@@ -1,9 +1,10 @@
 import React from 'react'
+import style from './styles/servicesMain.module.css'
 
 const Services = () => {
 	return (
 		<div>
-			<h1>THIS IS THE SERVICES PAGE BILLY OK</h1>
+			<h1></h1>
 		</div>
 	)
 }

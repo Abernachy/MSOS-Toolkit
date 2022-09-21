@@ -1,0 +1,18 @@
+.mainBody p {
+	color: var(--sq-blue);
+	font-size: 2.4rem;
+	line-height: 1.5;
+	margin: 1.5rem 0;
+}
+
+.topHeader {
+	font-size: 4rem;
+	font-weight: 700;
+	color: var(--sq-blue);
+	text-align: center;
+}
+
+.serviceDescriptionContainer {
+	display: flex;
+	flex-direction: row;
+}
