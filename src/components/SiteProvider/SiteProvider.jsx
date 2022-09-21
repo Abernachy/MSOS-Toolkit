@@ -1,7 +1,7 @@
 import { createContext, useContext, useState } from 'react'
 import { initialState } from '../../utils/initialState/initialState.jsx'
 
-const SiteContext = createContext()
+const SiteContext = createContext(initialState)
 const ToggleMobileNavContext = createContext()
 
 export function useAppContext() {
@@ -26,7 +26,7 @@ export function SiteProvider({ children }) {
 	}
 
 	return (
-		<SiteContext.Provider value={{ baseState: initialState }}>
+		<SiteContext.Provider value={initialState}>
 			<ToggleMobileNavContext.Provider
 				value={{
 					navMenuState: mobileNavMenu,

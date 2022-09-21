@@ -1,14 +1,5 @@
 export let amloResources = [
 	{
-		name: 'stuff',
-		type: 'Your face',
-		path: 'https://www.google.com',
-		requireCac: false,
-		img: '/imgs/alawone.jpg',
-		description:
-			'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, dolores?',
-	},
-	{
 		name: 'NOTAMS DINS',
 		type: 'Airfield Resources',
 		path: 'https://www.notams.faa.gov/dinsQueryWeb/',

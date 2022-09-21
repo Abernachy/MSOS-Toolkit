@@ -11,7 +11,7 @@ import styles from '../styles/Home.module.css'
 export default function Home() {
 	return (
 		<div>
-			{/* <div>
+			<div>
 				<div className={styles.heroContainer}>
 					<Image
 						src={msosHero}
@@ -113,7 +113,7 @@ export default function Home() {
 						</p>
 					</div>
 				</section>
-			</div> */}
+			</div>
 		</div>
 	)
 }
