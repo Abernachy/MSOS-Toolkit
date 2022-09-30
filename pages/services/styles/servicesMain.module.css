@@ -1,10 +1,3 @@
-.mainBody p {
-	color: var(--sq-blue);
-	font-size: 2.4rem;
-	line-height: 1.5;
-	margin: 1.5rem 0;
-}
-
 .topHeader {
 	font-size: 4rem;
 	font-weight: 700;
@@ -12,7 +5,80 @@
 	text-align: center;
 }
 
-.serviceDescriptionContainer {
+.lineDivider {
+	border: solid 5px var(--sq-gold);
+	background-color: var(--sq-gold);
+	margin-bottom: 1.5rem;
+}
+
+.mainBody p {
+	color: var(--sq-blue);
+	font-size: 2.4rem;
+	line-height: 1.5;
+	margin: 1rem;
+}
+.eagleDescription {
+	text-align: center;
+}
+
+.serviceContainer {
 	display: flex;
-	flex-direction: row;
+	overflow: hidden;
+	max-height: 50vh;
+	max-width: 100vw;
+	padding: 2rem;
+}
+
+.servicesContainer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 3rem;
+}
+.serviceContainer:hover {
+	box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.5);
+	transition: 0.5s ease-in-out;
+}
+
+.imagecontainer {
+	position: relative;
+}
+
+.serviceDescription {
+	max-width: 40%;
+	padding-right: 2rem;
+	text-align: center;
+}
+
+.serviceImage {
+	height: 100%;
+	width: 100%;
+	object-fit: contain;
+}
+
+.btn {
+	width: 25vw;
+	height: 25vh;
+	border-radius: 10%;
+	font-size: 2.5rem;
+	border: 5px solid var(--sq-blue);
+	color: var(--sq-blue);
+	cursor: pointer;
+	background-color: transparent;
+	padding: 1rem;
+}
+
+.btn:focus {
+	background-color: var(--sq-gold);
+	transition: 0.3s ease-in-out;
+}
+
+.bottomBlock {
+	display: flex;
+	justify-content: center;
+}
+
+.imageContainer {
+	display: block;
+	position: relative;
 }
