@@ -11,14 +11,14 @@ const eagleServices = () => {
 			<div>
 				<h1 className={style.topHeader}>EAGLES</h1>
 			</div>
-			<div className={style.lineDivider} />
 			<section className={style.mainBody}>
 				<p className={style.eagleDescription}>
 					Expeditionary Air Ground Liaison Elements (EAGLES) can provide a
 					number of services advertised below
 				</p>
+				<div className={style.lineDivider} />
 
-				<div className={style.servicesContainer}>
+				<div className={style.servicesMainContainer}>
 					<div className={style.serviceContainer}>
 						<p className={style.serviceDescription}>
 							EAGLES can pre-inspect your unit's paperwork before your
@@ -30,6 +30,8 @@ const eagleServices = () => {
 								className={style.serviceImage}
 								src={jaiImg}
 								alt='Checking equipment'
+								// width={500}
+								// height={500}
 							/>
 						</div>
 					</div>
