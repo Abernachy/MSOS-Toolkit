@@ -38,6 +38,7 @@ const Navbar = ({ navLinks }) => {
 								</Link>
 								{item.subRoutes && subMenuId == index ? (
 									<RouteContainer
+										style={{ transition: '2s ease-in;' }}
 										onMouseLeave={hideSubMenu}
 										className={navStyles.routeContainer}
 										heading={item.name}

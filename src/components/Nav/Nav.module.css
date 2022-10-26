@@ -32,6 +32,7 @@
 		font-weight: 600;
 		padding-bottom: 0.5rem;
 		text-decoration: underline;
+		transition: cubic-bezier(1, 0, 0, 1);
 	}
 
 	.deskItems > li:hover {
