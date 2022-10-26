@@ -1,15 +1,8 @@
 /* Component Styles */
 
-/* .routeContainer {
-	color: var(--sq-white);
-	background-color: var(--sq-blue);
-	z-index: 1;
-	border: 3px solid black;
-	border-radius: 5%;
-	overflow: hidden;
-	padding: 2rem;
-	box-shadow: 0px 0px 10px black;
-} */
+.routeContainer {
+	transition: 1s ease-in;
+}
 
 .routeHeading {
 	font-size: 2rem;
